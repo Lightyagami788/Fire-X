@@ -72,12 +72,12 @@ GITHUB ➛ <a href="https://github.com/Lightyagami788" alt="Yagami"><img src="ht
 
 
 
-#######  Credits
+#####  Credits 🌹
 
 - FridayUserBot ❤️ - 
 Most of the Plugins Taken from this Project.. Made possible by this. Full Credits. Full Respect
 
-- Virtualuserbot -
+- Virtualuserbot 🔥-
 Took a lot of commands thanks to INUKA-ASITH
 
 - DarkCobra 😍 - 
