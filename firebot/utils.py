@@ -254,7 +254,7 @@ def fire_on_cmd(pattern=None, **args):
 
 
 """ Userbot module for managing events.
- One of the main components of the virtualuserbot. """
+ One of the main components of the Firebot. """
 
 import asyncio
 import datetime
