@@ -715,7 +715,7 @@ async def _(event):
 ⭕️ NO SPAMMING !!!
 ⭕️ THIS IS NOT FOR SALE !!!⭕️ NO ILLEGAL ACTIVITES !!!
 ⭕️ AUTO REBOOT @ MIDNIGHT !!!
-⭕️Do Not Over Use This Service⭕️⚒ Configured by VirtualUserbot  
+⭕️Do Not Over Use This Service⭕️⚒ Configured by Fire-X  
 
 
 
@@ -757,7 +757,7 @@ async def _(event):
 ⭕️ NO SPAMMING !!!
 ⭕️ THIS IS NOT FOR SALE !!!⭕️ NO ILLEGAL ACTIVITES !!!
 ⭕️ AUTO REBOOT @ MIDNIGHT !!!
-⭕️Do Not Over Use This Service⭕️⚒ Configured by VirtualUserbot  
+⭕️Do Not Over Use This Service⭕️⚒ Configured by Fire-X  
 
 
 
@@ -807,7 +807,7 @@ async def _(event):
 ⭕️ NO SPAMMING !!!
 ⭕️ THIS IS NOT FOR SALE !!!⭕️ NO ILLEGAL ACTIVITES !!!
 ⭕️ AUTO REBOOT @ MIDNIGHT !!!
-⭕️Do Not Over Use This Service⭕️⚒ Configured by VirtualUserbot  
+⭕️Do Not Over Use This Service⭕️⚒ Configured by Fire-X  
 
 
 
