@@ -73,7 +73,7 @@ async def apk(event):
             + app_link
             + "'>View in Play Store</a>"
         )
-        app_details += "\n\n===> @Infinity_Bots <==="
+        app_details += "\n\n===> @FIRE_X_CHANNEL <==="
         await event.edit(app_details, link_preview=True, parse_mode="HTML")
     except IndexError:
         await event.edit("No result found in search. Please enter **Valid app name**")
