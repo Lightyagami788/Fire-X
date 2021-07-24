@@ -126,7 +126,7 @@ if lang == "si":
         afk_since = "**a while ago**"
         current_message_text = event.message.message.lower()
         if "afk" in current_message_text:
-            # firebot’s should not reply to other virtualuserbot's
+            # firebot’s should not reply to other firebot’s
             # https://core.telegram.org/bots/faq#why-doesn-39t-my-bot-see-messages-from-other-bots
             return False
         if USER_AFK and not (await event.get_sender()).bot:  # pylint:disable=E0602
