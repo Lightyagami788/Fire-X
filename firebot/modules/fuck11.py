@@ -521,7 +521,7 @@ async def _(event):
 [2021-01-12 16:58:55] Injector Service Started`""",
         """`[ 16:58:55] Tunnel Type HTTP Proxy ➔ SSH (Custom Payload)
 [ 16:58:55] [START] service requested
-[ 16:58:55] Network Status: CONNECTED  to WIFI "VirtualUserbot"
+[ 16:58:55] Network Status: CONNECTED  to WIFI "FIRE-X"
 [2021-01-12 16:58:55] Injector Service Started
 [ 16:58:55] Local IP: 192.188.800.100
 [ 16:58:55] Starting listening local port: 8989
@@ -545,7 +545,7 @@ async def _(event):
 [ 16:58:57] Injecting`""",
         """`[ 16:58:55] Tunnel Type HTTP Proxy ➔ SSH (Custom Payload)
 [ 16:58:55] [START] service requested
-[ 16:58:55] Network Status: CONNECTED  to WIFI "VirtualUserbot"
+[ 16:58:55] Network Status: CONNECTED  to WIFI "FIRE-X"
 [2021-01-12 16:58:55] Injector Service Started
 [ 16:58:55] Local IP: 192.188.800.100
 [ 16:58:55] Starting listening local port: 8989
