@@ -4,14 +4,14 @@
   "logo": "https://telegra.ph/file/8dfa5e4e768a586b1005d.jpg",
   "keywords": [
     "telegram",
-    "virtualuserbot",
+    "fire-x",
     "plugin",
-    "telegram-virtualuserbot",
+    "telegram-firebot",
     "productivity"
   ],
   "repository": "https://github.com/Chrisdroid1/Fire-X",
-  "website": "starkgang.ml",
-  "success_url": "t.me/FridayOT",
+  "website": "t.me/FIRE_X_CHANNEL",
+  "success_url": "t.me/FIRE_X_CHANNEL",
   "stack": "container",
   "env": {
     "ENV": {
