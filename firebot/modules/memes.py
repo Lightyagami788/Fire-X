@@ -1101,7 +1101,7 @@ async def faces(owo):
 
 @register(outgoing=True, pattern="^.react$")
 async def react_meme(react):
-    """Make your virtualuserbot react to everything."""
+    """Make your Fire-X react to everything."""
     if not react.text[0].isalpha() and react.text[0] not in ("/", "#", "@", "!"):
         await react.edit(random.choice(FACEREACTS))
 
