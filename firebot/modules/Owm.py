@@ -132,7 +132,7 @@ async def get_weather(weather):
 
 @fire.on(fire_on_cmd(pattern="setcity(?: |$)(.*)"))
 async def set_default_city(city):
-    """For .ctime command, change the default virtualuserbot country for date and time commands."""
+    """For .ctime command, change the default Fire-X country for date and time commands."""
 
     if not OWM_API:
         await city.edit("`Get an API key from` https://openweathermap.org/ `first.`")
