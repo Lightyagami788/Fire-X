@@ -39,7 +39,7 @@ FROM
 
 
 ### SESSION STRING 
-<a href="https://" target="_blank"><img src="https://img.shields.io/badge/RUN-On-REPL-orange.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://replit.com/@Lightyagami788/fire-X-string#main.py" target="_blank"><img src="https://img.shields.io/badge/RUN-On-REPL-orange.svg?style=for-the-badge&logo=Telegram"></a>
 #### SAFE TO USE 😌
 
 
