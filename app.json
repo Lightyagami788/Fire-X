@@ -28,7 +28,7 @@
       "value": ""
     },
     "lang": {
-      "description": "Enter the Userbot's language ( si , en ) <= Simple letters are copulsory.. only support si and en ",
+      "description": "Leave as en Don’t change ",
       "value": "en"
     },    
     "APP_ID": {
@@ -108,12 +108,12 @@
     },
      "ALIVE_IMAGE": {
       "description": "Enter Image URL for bot pic ",
-      "value": "https://telegra.ph/file/4e1364fb18f899ad47dec.png",
+      "value": "",
       "required": false
     },
      "PMPERMIT_PIC": {
       "description": "Enter Image URL for bot's pmsecurity pic ",
-      "value": "https://telegra.ph/file/4e1364fb18f899ad47dec.png",
+      "value": "",
       "required": false
     },    
     
