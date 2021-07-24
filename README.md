@@ -67,8 +67,6 @@ TELEGRAM ☞︎︎︎ <a href="https://t.me/lightrevengetakeryagami7878oo"> <img
  
  
 GITHUB ➛ <a href="https://github.com/Lightyagami788" alt="Yagami"><img src="https://img.shields.io/badge/github-Lightyagami788-teal?logo=github" /></a>
-Telegram ☞︎︎︎ .social&logo=telegram" alt="DEVELOPER" /></a>
-
 
 
 
