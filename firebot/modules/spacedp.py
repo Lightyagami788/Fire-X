@@ -43,7 +43,7 @@ async def animepp():
             "f.ttf",
         )
 
-    urllib.request.urlretrieve(fy, "friday.jpg")
+    urllib.request.urlretrieve(fy, "fire.jpg")
 
 
 @fire.on(fire_on_cmd(pattern="spacedp ?(.*)"))
