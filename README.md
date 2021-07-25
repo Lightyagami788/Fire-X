@@ -91,7 +91,7 @@ Internal Core Plugins taken.. Helped a lot to fix bugs in source.. Full respect
 - [Uniborg](https://github.com/SPECIHIDE/UniBorg)- 
 Userbots Made possible. Credits
 
-- TeleBot - 
+- [TeleBot](https://github.com/xditya/Telebot)-
 Speed Boosted by the help of this source code.. Credits
 
 - [Black Lightning](https://github.com/Keinshij/Black-lightning)- 
