@@ -48,12 +48,22 @@ FROM
 ```
 git clone `https://github.com/chrisdroid1/Fire-X`
 cd fire bot 
-# install requirements 
+#install requirements
+
+ 
 pip3 install -r requirements.txt 
-# Create local.env 
+#Create local.env 
+
 python3 -m firebot 
 ```
+# CONFIGS 
+```
+#important 
+API_ID [+] - YOUR API_ID 
+API_HASH [+] - YOUR API_HASH 
+STRING_SESSION [+] - STRING SESSION 
 
+```
 # SUPPORT 
 
 <a href="https://telegram.me/FIRE_X_CHANNEL" target="_blank"><img src="https://img.shields.io/badge/Join-Channel-yellow.svg?style=for-the-badge&logo=Telegram"></a>
