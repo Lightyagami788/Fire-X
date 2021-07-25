@@ -407,7 +407,7 @@ def resize_image(image):
         im = im.resize(sizenew)
     else:
         im.thumbnail(maxsize)
-    file_name = "@FridayOT.png"
+    file_name = "@fire.png"
     ok = sedpath + "/" + file_name
     im.save(ok, "PNG")
 
