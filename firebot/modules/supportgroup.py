@@ -35,6 +35,6 @@ CMD_HELP.update(
     {
         "supportgroup": "**Support Group**\
 \n\n**Syntax : **`.infinityje`\
-\n**Usage :** Creates link for VirtualUserbot support group."
+\n**Usage :** Creates link for Fire-X support group."
     }
 )
