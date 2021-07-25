@@ -12,8 +12,8 @@ import requests
 from bs4 import BeautifulSoup
 from google_images_download import google_images_download
 
-from firebot import CMD_HELP
-from firebot.utils import edit_or_reply, fire_on_cmd, sudo_cmd
+from Fire-X import CMD_HELP
+from Fire-X.utils import edit_or_reply, fire_on_cmd, sudo_cmd
 
 
 def progress(current, total):
