@@ -58,9 +58,7 @@ async def _(event):
     await event.edit("Video Downloaded Successfully. Starting To Upload.")
 
     kk = f"{filename}.mp4"
-    caption = (
-        f"Facebook Video Successfully by firebot.\nGet Your firebot From @FIRE_X_CHANNEL."
-    )
+    caption = f"Facebook Video Successfully by firebot.\nGet Your firebot From @FIRE_X_CHANNEL."
 
     await borg.send_message(
         event.chat_id,
