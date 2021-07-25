@@ -16,8 +16,8 @@ from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 from telethon.tl.types import DocumentAttributeVideo
 
-from firebot import CMD_HELP
-from firebot.Configs import Config as Var
+from Fire-X import CMD_HELP
+from Fire-X.Configs import Config as Var
 
 from ..utils import admin_cmd, progress
 

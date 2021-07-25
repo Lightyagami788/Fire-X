@@ -4,7 +4,7 @@ import sys
 
 import git
 
-from firebot.Configs import Config
+from Fire-X.Configs import Config
 
 from ..utils import fire_on_cmd as lightning_cmd
 

@@ -3,7 +3,7 @@ from datetime import datetime
 
 import requests
 
-from firebot.utils import edit_or_reply, fire_on_cmd, sudo_cmd
+from Fire-X.utils import edit_or_reply, fire_on_cmd, sudo_cmd
 
 
 def progress(current, total):

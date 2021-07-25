@@ -8,15 +8,15 @@ from telethon import Button, custom, events, functions
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.utils import pack_bot_file_id
 
-from firebot import bot
-from firebot.Configs import Config
-from firebot.modules.sql_helper.blacklist_assistant import (
+from Fire-X import bot
+from Fire-X.Configs import Config
+from Fire-X.modules.sql_helper.blacklist_assistant import (
     add_nibba_in_db,
     is_he_added,
     removenibba,
 )
-from firebot.modules.sql_helper.botusers_sql import add_me_in_db, his_userid
-from firebot.modules.sql_helper.idadder_sql import (
+from Fire-X.modules.sql_helper.botusers_sql import add_me_in_db, his_userid
+from Fire-X.modules.sql_helper.idadder_sql import (
     add_usersid_in_db,
     already_added,
     get_all_users,

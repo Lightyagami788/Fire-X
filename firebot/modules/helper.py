@@ -1,5 +1,5 @@
-from firebot import ALIVE_NAME, CMD_LIST, lang
-from firebot.utils import fire_on_cmd
+from Fire-X import ALIVE_NAME, CMD_LIST, lang
+from Fire-X.utils import fire_on_cmd
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Fire-X"
 

@@ -9,14 +9,14 @@ import re
 from telethon import utils
 from telethon.tl import types
 
-from firebot import CMD_HELP
-from firebot.modules.sql_helper.filter_sql import (
+from Fire-X import CMD_HELP
+from Fire-X.modules.sql_helper.filter_sql import (
     add_filter,
     get_all_filters,
     remove_all_filters,
     remove_filter,
 )
-from firebot.utils import edit_or_reply, fire_on_cmd, sudo_cmd
+from Fire-X.utils import edit_or_reply, fire_on_cmd, sudo_cmd
 
 DELETE_TIMEOUT = 0
 TYPE_TEXT = 0
@@ -34,7 +34,7 @@ async def on_snip(event):
     name = event.raw_text
     if event.chat_id in last_triggered_filters:
         if name in last_triggered_filters[event.chat_id]:
-            # avoid firebot spam
+            # avoid Fire-X spam
             # "I demand rights for us bots, we are equal to you humans." -Henri Koivuneva (t.me/UserbotTesting/2698)
             return False
     snips = get_all_filters(event.chat_id)

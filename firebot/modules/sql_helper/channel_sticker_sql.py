@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String, UnicodeText
 
-from firebot.modules.sql_helper import BASE, SESSION
+from Fire-X.modules.sql_helper import BASE, SESSION
 
 
 class Cst(BASE):

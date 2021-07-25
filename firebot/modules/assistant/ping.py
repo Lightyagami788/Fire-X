@@ -1,7 +1,7 @@
 import time
 from datetime import datetime
 
-from firebot import Lastupdate
+from Fire-X import Lastupdate
 
 
 def get_readable_time(seconds: int) -> str:

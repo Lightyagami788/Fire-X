@@ -2,7 +2,7 @@
 .cr (.*)"""
 from telethon.tl.types import Channel, Chat, User
 
-from firebot.utils import fire_on_cmd
+from Fire-X.utils import fire_on_cmd
 
 
 @borg.on(fire_on_cmd(pattern="cr (.*)"))

@@ -2,9 +2,9 @@ import asyncio
 import os
 from pathlib import Path
 
-from firebot import CMD_HELP
-from firebot.function import get_all_modules
-from firebot.utils import fire_on_cmd, load_module
+from Fire-X import CMD_HELP
+from Fire-X.function import get_all_modules
+from Fire-X.utils import fire_on_cmd, load_module
 
 DELETE_TIMEOUT = 5
 
@@ -18,7 +18,7 @@ async def install(event):
         try:
             downloaded_file_name = await event.client.download_media(
                 sedplugin,
-                "firebot/modules/",
+                "Fire-X/modules/",
             )
             if "(" not in downloaded_file_name:
                 path1 = Path(downloaded_file_name)

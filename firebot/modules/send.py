@@ -1,8 +1,8 @@
 import asyncio
 from datetime import datetime
 
-from firebot import CMD_HELP
-from firebot.utils import fire_on_cmd, sudo_cmd
+from Fire-X import CMD_HELP
+from Fire-X.utils import fire_on_cmd, sudo_cmd
 
 firethumb = "./resources/IMG_20210719_203716_508.jpg"
 
@@ -15,7 +15,7 @@ async def send(event):
     message_id = event.message.id
     input_str = event.pattern_match.group(1)
     start = datetime.now()
-    the_plugin_file = "./firebot/modules/{}.py".format(input_str)
+    the_plugin_file = "./Fire-X/modules/{}.py".format(input_str)
     end = datetime.now()
     (end - start).seconds
     men = f"Plugin Name - {input_str}.py \nUploaded By Fire-X"

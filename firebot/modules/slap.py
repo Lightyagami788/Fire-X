@@ -4,7 +4,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 from uniborg.util import fire_on_cmd
 
-from firebot import ALIVE_NAME, CMD_HELP
+from Fire-X import ALIVE_NAME, CMD_HELP
 
 SLAP_TEMPLATES = [
     "{user1} {hits} {user2} with a {item}.",

@@ -4,7 +4,7 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.types import MessageMediaPhoto
 from uniborg.util import fire_on_cmd
 
-from firebot import CMD_HELP
+from Fire-X import CMD_HELP
 
 thumb_image_path = Config.TMP_DOWNLOAD_DIRECTORY + "/thumb_image.jpg"
 

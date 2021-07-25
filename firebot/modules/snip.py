@@ -1,14 +1,14 @@
 from telethon import events, utils
 from telethon.tl import types
 
-from firebot import CMD_HELP
-from firebot.modules.sql_helper.snips_sql import (
+from Fire-X import CMD_HELP
+from Fire-X.modules.sql_helper.snips_sql import (
     add_snip,
     get_all_snips,
     get_snips,
     remove_snip,
 )
-from firebot.utils import fire_on_cmd
+from Fire-X.utils import fire_on_cmd
 
 TYPE_TEXT = 0
 TYPE_PHOTO = 1

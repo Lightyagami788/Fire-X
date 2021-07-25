@@ -4,8 +4,8 @@ from datetime import datetime
 
 import requests
 
-from firebot import CMD_HELP
-from firebot.utils import admin_cmd
+from Fire-X import CMD_HELP
+from Fire-X.utils import admin_cmd
 
 firethumb = "./resources/IMG_20210719_203714_817.jpg"
 

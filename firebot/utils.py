@@ -6,9 +6,9 @@ from pathlib import Path
 
 from telethon import events
 
-from firebot import CMD_LIST, LOAD_PLUG, SUDO_LIST, bot
-from firebot.Configs import Config
-from firebot.wraptools import am_i_admin, ignore_bot, ignore_fwd, ignore_grp, ignore_pm
+from Fire-X import CMD_LIST, LOAD_PLUG, SUDO_LIST, bot
+from Fire-X.Configs import Config
+from Fire-X.wraptools import am_i_admin, ignore_bot, ignore_fwd, ignore_grp, ignore_pm
 from var import Var
 
 sedprint = logging.getLogger("PLUGINS")
@@ -92,11 +92,11 @@ def load_module(shortname):
         import sys
         from pathlib import Path
 
-        import firebot.modules
-        import firebot.utils
+        import Fire-X.modules
+        import Fire-X.utils
 
-        path = Path(f"firebot/modules/{shortname}.py")
-        name = "firebot.modules.{}".format(shortname)
+        path = Path(f"Fire-X/modules/{shortname}.py")
+        name = "Fire-X.modules.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
@@ -106,11 +106,11 @@ def load_module(shortname):
         import sys
         from pathlib import Path
 
-        import firebot.modules
-        import firebot.utils
+        import Fire-X.modules
+        import Fire-X.utils
 
-        path = Path(f"firebot/modules/{shortname}.py")
-        name = "firebot.modules.{}".format(shortname)
+        path = Path(f"Fire-X/modules/{shortname}.py")
+        name = "Fire-X.modules.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.bot = bot
@@ -119,12 +119,12 @@ def load_module(shortname):
         mod.command = command
         mod.logger = logging.getLogger(shortname)
         # support for uniborg
-        sys.modules["uniborg.util"] = firebot.utils
-        sys.modules["fire.util"] = firebot.utils
-        sys.modules["userbot.utils"] = firebot.utils
-        sys.modules["userbot.plugins"] = firebot.modules
-        sys.modules["plugins"] = firebot.modules
-        sys.modules["userbot"] = firebot
+        sys.modules["uniborg.util"] = Fire-X.utils
+        sys.modules["fire.util"] = Fire-X.utils
+        sys.modules["userbot.utils"] = Fire-X.utils
+        sys.modules["userbot.plugins"] = Fire-X.modules
+        sys.modules["plugins"] = Fire-X.modules
+        sys.modules["userbot"] = Fire-X
         mod.Config = Config
         mod.ignore_grp = ignore_grp()
         mod.ignore_pm = ignore_pm()
@@ -134,10 +134,10 @@ def load_module(shortname):
         mod.borg = bot
         mod.fire = bot
         # support for paperplaneextended
-        sys.modules["firebot.events"] = firebot.utils
+        sys.modules["Fire-X.events"] = Fire-X.utils
         spec.loader.exec_module(mod)
         # for imports
-        sys.modules["firebot.modules." + shortname] = mod
+        sys.modules["Fire-X.modules." + shortname] = mod
         sedprint.info("Successfully imported " + shortname)
 
 
@@ -149,7 +149,7 @@ def remove_plugin(shortname):
             del LOAD_PLUG[shortname]
 
         except:
-            name = f"firebot.modules.{shortname}"
+            name = f"Fire-X.modules.{shortname}"
 
             for i in reversed(range(len(bot._event_builders))):
                 ev, cb = bot._event_builders[i]
@@ -259,7 +259,7 @@ from time import gmtime, strftime
 
 from telethon import events
 
-from firebot import bot
+from Fire-X import bot
 
 
 def register(**args):
@@ -646,8 +646,8 @@ def start_assistant(shortname):
         import sys
         from pathlib import Path
 
-        path = Path(f"firebot/modules/assistant/{shortname}.py")
-        name = "firebot.modules.assistant.{}".format(shortname)
+        path = Path(f"Fire-X/modules/assistant/{shortname}.py")
+        name = "Fire-X.modules.assistant.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
@@ -658,8 +658,8 @@ def start_assistant(shortname):
         import sys
         from pathlib import Path
 
-        path = Path(f"firebot/modules/assistant/{shortname}.py")
-        name = "firebot.modules.assistant.{}".format(shortname)
+        path = Path(f"Fire-X/modules/assistant/{shortname}.py")
+        name = "Fire-X.modules.assistant.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.tgbot = bot.tgbot
@@ -675,5 +675,5 @@ def start_assistant(shortname):
         mod.peru_only = peru_only()
         mod.only_pvt = only_pvt()
         spec.loader.exec_module(mod)
-        sys.modules["firebot.modules.assistant" + shortname] = mod
+        sys.modules["Fire-X.modules.assistant" + shortname] = mod
         sedprint.info("Assistant Has imported " + shortname)

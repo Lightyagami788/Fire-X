@@ -1,7 +1,7 @@
 from telethon.tl.types import InputMediaDice
 
-from firebot import CMD_HELP
-from firebot.utils import fire_on_cmd
+from Fire-X import CMD_HELP
+from Fire-X.utils import fire_on_cmd
 
 # EMOJI CONSTANTS
 DART_E_MOJI = "🎯"

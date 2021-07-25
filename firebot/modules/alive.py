@@ -5,9 +5,9 @@ import time
 from telethon import version
 from uniborg.util import fire_on_cmd, sudo_cmd
 
-from firebot import ALIVE_NAME, CMD_HELP, Lastupdate
-from firebot.Configs import Config
-from firebot.modules import currentversion
+from Fire-X import ALIVE_NAME, CMD_HELP, Lastupdate
+from Fire-X.Configs import Config
+from Fire-X.modules import currentversion
 
 
 # Functions

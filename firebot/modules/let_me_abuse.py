@@ -5,7 +5,7 @@
 
 import random
 
-from firebot.utils import fire_on_cmd
+from Fire-X.utils import fire_on_cmd
 
 
 @fire.on(fire_on_cmd(pattern=r"habuse(.*)", outgoing=True))

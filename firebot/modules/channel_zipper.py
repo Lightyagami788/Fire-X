@@ -2,8 +2,8 @@ import os
 import shutil
 import uuid
 
-from firebot import CMD_HELP
-from firebot.utils import fire_on_cmd
+from Fire-X import CMD_HELP
+from Fire-X.utils import fire_on_cmd
 
 
 @fire.on(fire_on_cmd(pattern="chnnlzip(?: |$)(.*)"))

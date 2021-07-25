@@ -1,8 +1,8 @@
 import flag
 from countryinfo import CountryInfo
 
-from firebot import CMD_HELP
-from firebot.utils import admin_cmd
+from Fire-X import CMD_HELP
+from Fire-X.utils import admin_cmd
 
 
 @fire.on(admin_cmd(pattern="country (.*)"))

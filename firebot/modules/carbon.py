@@ -8,8 +8,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 
-from firebot import CHROME_DRIVER, CMD_HELP, GOOGLE_CHROME_BIN
-from firebot.utils import fire_on_cmd
+from Fire-X import CHROME_DRIVER, CMD_HELP, GOOGLE_CHROME_BIN
+from Fire-X.utils import fire_on_cmd
 
 CARBONLANG = "auto"
 LANG = "en"

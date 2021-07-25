@@ -6,7 +6,7 @@ and may cmd would be added soon."""
 from cowpy import cow
 from telethon import events
 
-from firebot import CMD_HELP
+from Fire-X import CMD_HELP
 
 
 @fire.on(events.NewMessage(pattern=r"^.(\w+)say (.*)", outgoing=True))

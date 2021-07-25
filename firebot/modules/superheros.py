@@ -1,7 +1,7 @@
 import requests
 
-from firebot.Configs import Config
-from firebot.utils import admin_cmd
+from Fire-X.Configs import Config
+from Fire-X.utils import admin_cmd
 
 
 @fire.on(admin_cmd(pattern="hero (.*)"))

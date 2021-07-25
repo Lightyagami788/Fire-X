@@ -7,7 +7,7 @@ import numpy as np
 from pydub import AudioSegment
 from telethon import types
 
-from firebot.utils import admin_cmd
+from Fire-X.utils import admin_cmd
 
 
 @fire.on(admin_cmd(pattern="bassbost ?(.*)"))

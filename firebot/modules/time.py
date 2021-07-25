@@ -4,8 +4,8 @@ from datetime import datetime
 
 from PIL import Image, ImageDraw, ImageFont
 
-from firebot import CMD_HELP
-from firebot.utils import fire_on_cmd
+from Fire-X import CMD_HELP
+from Fire-X.utils import fire_on_cmd
 
 FONT_FILE_TO_USE = "Fonts/go3v2.ttf"
 

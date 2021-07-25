@@ -2,8 +2,8 @@ import asyncio
 
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
-from firebot import CMD_HELP, bot
-from firebot.utils import fire_on_cmd
+from Fire-X import CMD_HELP, bot
+from Fire-X.utils import fire_on_cmd
 
 
 @fire.on(fire_on_cmd(pattern="netease ?(.*)"))

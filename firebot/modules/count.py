@@ -7,8 +7,8 @@ from telethon.events import NewMessage
 from telethon.tl.custom import Dialog
 from telethon.tl.types import Channel, Chat, User
 
-from firebot import CMD_HELP
-from firebot.utils import fire_on_cmd
+from Fire-X import CMD_HELP
+from Fire-X.utils import fire_on_cmd
 
 logging.basicConfig(
     format="[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s", level=logging.WARNING

@@ -17,8 +17,8 @@ import re
 
 from telethon import events
 
-from firebot import bot
-from firebot.Configs import Config
+from Fire-X import bot
+from Fire-X.Configs import Config
 from var import Var
 
 

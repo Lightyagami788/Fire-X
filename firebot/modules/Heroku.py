@@ -12,8 +12,8 @@ import heroku3
 import requests
 from telegraph import Telegraph
 
-from firebot import CMD_HELP
-from firebot.utils import edit_or_reply, fire_on_cmd, sudo_cmd
+from Fire-X import CMD_HELP
+from Fire-X.utils import edit_or_reply, fire_on_cmd, sudo_cmd
 
 telegraph = Telegraph()
 tgnoob = telegraph.create_account(short_name="Fire 🇮🇳")

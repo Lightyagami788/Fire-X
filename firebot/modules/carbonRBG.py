@@ -10,7 +10,7 @@ from urllib.parse import quote_plus
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-from firebot import CMD_HELP
+from Fire-X import CMD_HELP
 
 from ..utils import admin_cmd
 

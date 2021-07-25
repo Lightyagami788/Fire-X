@@ -2,7 +2,7 @@ from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from uniborg.util import fire_on_cmd
 
-from firebot import CMD_HELP
+from Fire-X import CMD_HELP
 
 
 @fire.on(fire_on_cmd(pattern="mashup ?(.*)"))

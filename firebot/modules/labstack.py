@@ -4,7 +4,7 @@ import subprocess
 
 import requests
 
-from firebot.utils import admin_cmd
+from Fire-X.utils import admin_cmd
 
 
 @fire.on(admin_cmd(pattern="labstack ?(.*)"))

@@ -3,7 +3,7 @@ import os
 import cv2
 from PIL import Image
 
-from firebot import bot
+from Fire-X import bot
 
 from ..utils import admin_cmd
 

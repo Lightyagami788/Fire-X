@@ -3,11 +3,11 @@ import asyncio
 from telethon.events import ChatAction, NewMessage
 from telethon.tl.types import MessageEntityMentionName
 
-from firebot import CMD_HELP
-from firebot.function import get_all_admin_chats, is_admin
-from firebot.modules.sql_helper import gban_sql
-from firebot.modules.sql_helper.mute_sql import is_muted, mute, unmute
-from firebot.utils import fire_on_cmd
+from Fire-X import CMD_HELP
+from Fire-X.function import get_all_admin_chats, is_admin
+from Fire-X.modules.sql_helper import gban_sql
+from Fire-X.modules.sql_helper.mute_sql import is_muted, mute, unmute
+from Fire-X.utils import fire_on_cmd
 
 
 @fire.on(fire_on_cmd(pattern="gban(?: |$)(.*)"))

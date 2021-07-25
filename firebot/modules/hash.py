@@ -5,8 +5,8 @@ from subprocess import run as runapp
 
 import pybase64
 
-from firebot import CMD_HELP
-from firebot.events import errors_handler, register
+from Fire-X import CMD_HELP
+from Fire-X.events import errors_handler, register
 
 
 @register(outgoing=True, pattern="^.hash (.*)")

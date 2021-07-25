@@ -3,7 +3,7 @@ from asyncio import sleep
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChatBannedRights
 
-from firebot import bot
+from Fire-X import bot
 
 from ..utils import admin_cmd
 

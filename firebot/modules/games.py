@@ -1,6 +1,6 @@
 import re
 
-from firebot import bot
+from Fire-X import bot
 
 from ..utils import admin_cmd
 

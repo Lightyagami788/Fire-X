@@ -2,9 +2,9 @@ import os
 import shutil
 from re import findall
 
-from firebot import CMD_HELP
-from firebot.googol_images import googleimagesdownload
-from firebot.utils import edit_or_reply, fire_on_cmd, sudo_cmd
+from Fire-X import CMD_HELP
+from Fire-X.googol_images import googleimagesdownload
+from Fire-X.utils import edit_or_reply, fire_on_cmd, sudo_cmd
 
 
 @fire.on(fire_on_cmd(pattern="img ?(.*)"))

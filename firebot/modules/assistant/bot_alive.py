@@ -1,5 +1,5 @@
-from firebot import ALIVE_NAME
-from firebot.modules import currentversion
+from Fire-X import ALIVE_NAME
+from Fire-X.modules import currentversion
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Unknown"
 PM_IMG = "https://telegra.ph/file/cf228783192e93b60f04a.jpg"

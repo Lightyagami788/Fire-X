@@ -3,8 +3,8 @@ import os
 from glitch_this import ImageGlitcher
 from telethon.tl.types import MessageMediaPhoto
 
-from firebot import CMD_HELP
-from firebot.utils import fire_on_cmd, sudo_cmd
+from Fire-X import CMD_HELP
+from Fire-X.utils import fire_on_cmd, sudo_cmd
 
 glitcher = ImageGlitcher()
 DURATION = 200  # Set this to however many centiseconds each frame should be visible for

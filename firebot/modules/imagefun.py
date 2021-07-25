@@ -8,8 +8,8 @@ import requests
 from PIL import Image, ImageDraw
 from telegraph import upload_file
 
-from firebot import CMD_HELP, bot
-from firebot.utils import admin_cmd
+from Fire-X import CMD_HELP, bot
+from Fire-X.utils import admin_cmd
 
 path = "./dcobra/"
 if not os.path.isdir(path):

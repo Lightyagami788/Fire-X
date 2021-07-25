@@ -1,7 +1,7 @@
 import secrets
 
-from firebot import sclient
-from firebot.utils import admin_cmd
+from Fire-X import sclient
+from Fire-X.utils import admin_cmd
 
 json_codes = {
     "nsX01": "Pornography - High Risk",

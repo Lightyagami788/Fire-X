@@ -4,8 +4,8 @@ from telethon.tl import functions
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 
-from firebot import ALIVE_NAME, AUTONAME, CMD_HELP, DEFAULT_BIO
-from firebot.utils import admin_cmd
+from Fire-X import ALIVE_NAME, AUTONAME, CMD_HELP, DEFAULT_BIO
+from Fire-X.utils import admin_cmd
 
 FIREBOT = " "
 DEFAULTUSER = str(AUTONAME) if AUTONAME else str(ALIVE_NAME)

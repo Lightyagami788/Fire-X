@@ -2,7 +2,7 @@ import io
 import sys
 import traceback
 
-from firebot.utils import fire_on_cmd
+from Fire-X.utils import fire_on_cmd
 
 
 @fire.on(fire_on_cmd(pattern="exec"))

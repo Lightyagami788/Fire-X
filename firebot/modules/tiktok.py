@@ -6,7 +6,7 @@ from hachoir.parser import createParser
 from PIL import Image
 from uniborg.util import fire_on_cmd
 
-from firebot import CMD_HELP
+from Fire-X import CMD_HELP
 
 thumb_image_path = Config.TMP_DOWNLOAD_DIRECTORY + "/thumb_image.jpg"
 

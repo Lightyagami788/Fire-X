@@ -1,7 +1,7 @@
 import logging
 
-from firebot import CMD_HELP
-from firebot.utils import fire_on_cmd, sudo_cmd
+from Fire-X import CMD_HELP
+from Fire-X.utils import fire_on_cmd, sudo_cmd
 
 logger = logging.getLogger(__name__)
 

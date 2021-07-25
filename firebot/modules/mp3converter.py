@@ -6,7 +6,7 @@ import os
 import time
 from datetime import datetime
 
-from firebot.utils import fire_on_cmd, progress
+from Fire-X.utils import fire_on_cmd, progress
 
 
 @fire.on(fire_on_cmd(pattern="convert (.*)"))  # pylint:disable=E0602

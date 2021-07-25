@@ -1,5 +1,5 @@
-from firebot.Configs import Config
-from firebot.utils import fire_on_cmd
+from Fire-X.Configs import Config
+from Fire-X.utils import fire_on_cmd
 from var import Var
 
 issudousing = Config.SUDO_USERS

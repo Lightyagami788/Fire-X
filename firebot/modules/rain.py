@@ -3,7 +3,7 @@ from collections import deque
 
 from telethon import events
 
-from firebot import CMD_HELP
+from Fire-X import CMD_HELP
 
 
 @fire.on(events.NewMessage(pattern=r"\.rain", outgoing=True))

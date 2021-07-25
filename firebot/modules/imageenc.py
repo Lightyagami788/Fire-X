@@ -2,9 +2,9 @@ import os
 
 import requests
 
-from firebot import ALIVE_NAME, CMD_HELP
-from firebot import bot
-from firebot import bot as borg
+from Fire-X import ALIVE_NAME, CMD_HELP
+from Fire-X import bot
+from Fire-X import bot as borg
 
 from ..utils import admin_cmd
 

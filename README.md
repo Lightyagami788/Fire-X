@@ -54,7 +54,7 @@ $ cd fire bot
 $ pip3 install -r requirements.txt 
 #Create local.env 
 
-$ python3 -m firebot 
+$ python3 -m Fire-X 
 ```
 # CONFIGS 
 ```

@@ -4,9 +4,9 @@ import time
 
 from telethon.tl.types import DocumentAttributeFilename
 
-from firebot import CMD_HELP, bot
-from firebot.events import register
-from firebot.function import progress
+from Fire-X import CMD_HELP, bot
+from Fire-X.events import register
+from Fire-X.function import progress
 
 
 @register(outgoing=True, pattern=r"^\.ssvideo(?: |$)(.*)")

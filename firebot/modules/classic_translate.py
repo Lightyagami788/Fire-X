@@ -6,7 +6,7 @@ Available Commands:
 import emoji
 from googletrans import Translator
 
-from firebot import CMD_HELP
+from Fire-X import CMD_HELP
 
 from ..utils import admin_cmd
 

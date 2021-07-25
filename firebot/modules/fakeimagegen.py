@@ -2,8 +2,8 @@ import os
 
 import requests
 
-from firebot import CMD_HELP
-from firebot.utils import fire_on_cmd, sudo_cmd
+from Fire-X import CMD_HELP
+from Fire-X.utils import fire_on_cmd, sudo_cmd
 
 
 # hmm
@@ -23,7 +23,7 @@ async def _(event):
     fole = "JUSTFIRE.jpg"
     await borg.send_file(event.chat_id, fole, caption=captin)
     await event.delete()
-    os.system("rm /root/firebot/JUSTFIRE.jpg ")
+    os.system("rm /root/Fire-X/JUSTFIRE.jpg ")
 
 
 CMD_HELP.update(

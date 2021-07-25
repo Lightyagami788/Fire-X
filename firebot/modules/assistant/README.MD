@@ -1,8 +1,8 @@
 # EXAMPLE CODE FOR ASSISTANT MODULE/PLUGIN
 
 ```python3
-from firebot.Configs import Config
-from firebot import bot
+from Fire-X.Configs import Config
+from Fire-X import bot
 @assistant_cmd("commandhere", is_args=True)
 @only_pvt
 async def shit(event):

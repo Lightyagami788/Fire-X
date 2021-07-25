@@ -3,8 +3,8 @@ import asyncio
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChatBannedRights
 
-from firebot import CMD_HELP, pro
-from firebot.modules.sql_helper import floodsql as sql
+from Fire-X import CMD_HELP, pro
+from Fire-X.modules.sql_helper import floodsql as sql
 
 from ..utils import admin_cmd
 

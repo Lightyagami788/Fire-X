@@ -6,7 +6,7 @@
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
-from firebot import pro
+from Fire-X import pro
 
 from ..utils import admin_cmd
 

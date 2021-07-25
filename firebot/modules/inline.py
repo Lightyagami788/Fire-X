@@ -11,9 +11,9 @@ from search_engine_parser import GoogleSearch
 from telethon import Button, custom, events, functions
 from youtube_search import YoutubeSearch
 
-from firebot import ALIVE_NAME, CMD_HELP, CMD_LIST, lang
-from firebot.function import _deezer_dl, _ytdl
-from firebot.modules import inlinestats
+from Fire-X import ALIVE_NAME, CMD_HELP, CMD_LIST, lang
+from Fire-X.function import _deezer_dl, _ytdl
+from Fire-X.modules import inlinestats
 
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 if PMPERMIT_PIC is None:

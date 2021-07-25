@@ -6,9 +6,9 @@ from pytz import country_names as c_n
 from pytz import country_timezones as c_tz
 from pytz import timezone as tz
 
-from firebot import CMD_HELP
-from firebot import OPEN_WEATHER_MAP_APPID as OWM_API
-from firebot.utils import fire_on_cmd
+from Fire-X import CMD_HELP
+from Fire-X import OPEN_WEATHER_MAP_APPID as OWM_API
+from Fire-X.utils import fire_on_cmd
 
 # ===== CONSTANT =====
 DEFCITY = "Ahmedabad"

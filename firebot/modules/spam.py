@@ -1,8 +1,8 @@
 import asyncio
 
-from firebot import CMD_HELP
-from firebot.Configs import Config
-from firebot.utils import admin_cmd, sudo_cmd
+from Fire-X import CMD_HELP
+from Fire-X.Configs import Config
+from Fire-X.utils import admin_cmd, sudo_cmd
 
 LOGGER = Config.PLUGIN_CHANNEL
 SUDO_WALA = Config.SUDO_USERS
@@ -28,9 +28,9 @@ async def spammer(e):
 async def bigspam(fire):
     if not fire.text[0].isalpha() and fire.text[0] not in ("/", "#", "@", "!"):
         fire_msg = fire.text
-        firebot_count = int(fire_msg[9:13])
+        Fire-X_count = int(fire_msg[9:13])
         fire_spam = str(fire.text[13:])
-        for i in range(1, firebot_count):
+        for i in range(1, Fire-X_count):
             await fire.respond(fire_spam)
         await fire.delete()
         if LOGGER:
@@ -95,6 +95,6 @@ CMD_HELP.update(
 \n\n**Syntax : **`.dspam <delay> <spam count> <text>`\
 \n**Usage :**  Sends the text 'X' number of times in 'Y' seconds of delay\
 \n\n**Syntax : **`.bigspam <delay> <spam count> <text>`\
-\n**Usage :** Sends the text 'X' number of times. This what firebot is known for. The Best BigSpam Ever."
+\n**Usage :** Sends the text 'X' number of times. This what Fire-X is known for. The Best BigSpam Ever."
     }
 )

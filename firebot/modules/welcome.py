@@ -1,14 +1,14 @@
 from telethon import events
 from telethon.utils import pack_bot_file_id
 
-from firebot import CMD_HELP
-from firebot.modules.sql_helper.welcome_sql import (
+from Fire-X import CMD_HELP
+from Fire-X.modules.sql_helper.welcome_sql import (
     add_welcome_setting,
     get_current_welcome_settings,
     rm_welcome_setting,
     update_previous_welcome,
 )
-from firebot.utils import fire_on_cmd
+from Fire-X.utils import fire_on_cmd
 
 
 @bot.on(events.ChatAction())  # pylint:disable=E0602

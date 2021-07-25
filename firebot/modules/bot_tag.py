@@ -2,7 +2,7 @@ from telethon import custom, events
 from telethon.tl.types import Chat
 from telethon.utils import get_display_name
 
-from firebot.Configs import Config
+from Fire-X.Configs import Config
 
 
 @fire.on(

@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, distinct, func
 
-from firebot.modules.sql_helper import BASE, SESSION
+from Fire-X.modules.sql_helper import BASE, SESSION
 
 
 class BlackListFilters(BASE):

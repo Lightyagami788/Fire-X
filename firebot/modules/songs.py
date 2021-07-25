@@ -9,7 +9,7 @@ from telethon.errors.rpcerrorlist import (
 from telethon.tl.functions.messages import ImportChatInviteRequest
 from telethon.tl.types import InputMessagesFilterMusic
 
-from firebot import CMD_HELP, bot
+from Fire-X import CMD_HELP, bot
 
 from ..utils import admin_cmd
 

@@ -14,8 +14,8 @@ from telethon.tl.types import (
     MessageEntityMentionName,
 )
 
-from firebot import CMD_HELP
-from firebot.events import register
+from Fire-X import CMD_HELP
+from Fire-X.events import register
 
 
 def parse_arguments(message: str, valid: List[str]) -> (dict, str):

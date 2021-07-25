@@ -1,4 +1,4 @@
-from firebot.utils import fire_on_cmd, load_module, remove_plugin
+from Fire-X.utils import fire_on_cmd, load_module, remove_plugin
 
 
 @fire.on(fire_on_cmd(pattern="load ?(.*)", outgoing=True))

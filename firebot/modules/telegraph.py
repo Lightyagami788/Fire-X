@@ -4,8 +4,8 @@ from datetime import datetime
 from PIL import Image
 from telegraph import Telegraph, exceptions, upload_file
 
-from firebot import CMD_HELP
-from firebot.utils import fire_on_cmd
+from Fire-X import CMD_HELP
+from Fire-X.utils import fire_on_cmd
 
 telegraph = Telegraph()
 r = telegraph.create_account(short_name=Config.TELEGRAPH_SHORT_NAME)

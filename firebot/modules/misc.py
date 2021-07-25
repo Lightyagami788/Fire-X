@@ -1,8 +1,8 @@
 from random import randint
 from time import sleep
 
-from firebot import CMD_HELP
-from firebot.events import register
+from Fire-X import CMD_HELP
+from Fire-X.events import register
 
 
 @register(outgoing=True, pattern="^.random")

@@ -2,8 +2,8 @@
 Syntax: .get_id"""
 from telethon.utils import pack_bot_file_id
 
-from firebot import CMD_HELP
-from firebot.utils import edit_or_reply, fire_on_cmd, sudo_cmd
+from Fire-X import CMD_HELP
+from Fire-X.utils import edit_or_reply, fire_on_cmd, sudo_cmd
 
 
 @fire.on(fire_on_cmd("get_id"))

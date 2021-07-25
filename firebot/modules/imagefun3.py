@@ -7,7 +7,7 @@ import cv2
 import numpy as np
 from PIL import Image
 
-from firebot import CMD_HELP, bot
+from Fire-X import CMD_HELP, bot
 
 from ..utils import admin_cmd
 

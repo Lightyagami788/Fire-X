@@ -4,7 +4,7 @@ import urllib
 
 import requests
 
-from firebot import pro
+from Fire-X import pro
 
 from ..utils import admin_cmd, sudo_cmd
 

@@ -16,9 +16,9 @@ from telethon.tl.types import (
     MessageMediaPhoto,
 )
 
-from firebot import ALIVE_NAME, CMD_HELP
-from firebot.function import convert_to_image
-from firebot.utils import edit_or_reply, fire_on_cmd, sudo_cmd
+from Fire-X import ALIVE_NAME, CMD_HELP
+from Fire-X.function import convert_to_image
+from Fire-X.utils import edit_or_reply, fire_on_cmd, sudo_cmd
 
 sedpath = Config.TMP_DOWNLOAD_DIRECTORY
 if not os.path.isdir(sedpath):
@@ -53,17 +53,17 @@ async def _(event):
     pack = 1
     userid = event.sender_id
     packname = f"@{user.username} KangPack {pack}"
-    packshortname = f"firebot_{userid}_Pack"
+    packshortname = f"Fire-X_{userid}_Pack"
     await moods.edit("`This Sticker is Gonna Get Stolen.....`")
     is_a_s = is_it_animated_sticker(reply_message)
-    file_ext_ns_ion = "@firebot.png"
+    file_ext_ns_ion = "@Fire-X.png"
     uploaded_sticker = None
     if is_a_s:
         file = await borg.download_file(reply_message.media)
         file_ext_ns_ion = "AnimatedSticker.tgs"
         uploaded_sticker = await borg.upload_file(file, file_name=file_ext_ns_ion)
         packname = f"@{user.username} KangPack {pack}"
-        packshortname = f"firebot_{userid}"  # format: Uni_Borg_userid
+        packshortname = f"Fire-X_{userid}"  # format: Uni_Borg_userid
     else:
         sticker = await convert_to_image(event, borg)
         resize_image(sticker)
@@ -196,7 +196,7 @@ async def _(event):
     await moods.edit(
         f"`This Sticker Has Came To Your Pack.` \n**Check It Out** [Here](t.me/addstickers/{packshortname})"
     )
-    os.remove(sedpath + "/" + "@firebot.png")
+    os.remove(sedpath + "/" + "@Fire-X.png")
 
 
 @fire.on(fire_on_cmd(pattern="packinfo"))

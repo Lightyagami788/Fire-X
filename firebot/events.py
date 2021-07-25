@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 """ Userbot module for managing events.
- One of the main components of the firebot. """
+ One of the main components of the Fire-X. """
 
 import sys
 from asyncio import create_subprocess_shell as asyncsubshell
@@ -15,7 +15,7 @@ from traceback import format_exc
 
 from telethon import events
 
-from firebot import LOGSPAMMER, PRIVATE_GROUP_ID, bot
+from Fire-X import LOGSPAMMER, PRIVATE_GROUP_ID, bot
 
 
 def register(**args):
@@ -128,8 +128,8 @@ def register(**args):
 
                     if LOGSPAMMER:
                         await check.client.respond(
-                            "`Sorry, my firebot has crashed.\
-                        \nThe error logs are stored in the firebot’s log chat.`"
+                            "`Sorry, my Fire-X has crashed.\
+                        \nThe error logs are stored in the Fire-X’s log chat.`"
                         )
 
                     await check.client.send_file(send_to, "error.log", caption=text)

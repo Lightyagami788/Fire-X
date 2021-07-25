@@ -2,8 +2,8 @@
 Syntax: .get_bot"""
 from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantsBots
 
-from firebot import CMD_HELP
-from firebot.utils import fire_on_cmd
+from Fire-X import CMD_HELP
+from Fire-X.utils import fire_on_cmd
 
 
 @fire.on(fire_on_cmd("get_bot ?(.*)"))

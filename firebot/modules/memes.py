@@ -23,8 +23,8 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 from uniborg.util import fire_on_cmd
 
-from firebot import CMD_HELP
-from firebot.utils import register
+from Fire-X import CMD_HELP
+from Fire-X.utils import register
 
 # ================= CONSTANT =================
 RENDISTR = [
@@ -1530,7 +1530,7 @@ CMD_HELP.update(
 \n\n.owo\
 \nUsage: UwU\
 \n\n.react\
-\nUsage: Make your firebot react to everything.\
+\nUsage: Make your Fire-X react to everything.\
 \n\n.slap\
 \nUsage: reply to slap them with random objects !!\
 \n\n.cry\
