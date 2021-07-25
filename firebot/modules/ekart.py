@@ -1,7 +1,7 @@
 import requests
 
-from Fire-X import CMD_HELP
-from Fire-X.utils import admin_cmd
+from firebot import CMD_HELP
+from firebot.utils import admin_cmd
 
 
 @fire.on(admin_cmd(pattern="ekart (.*)"))
@@ -36,7 +36,7 @@ Time:- {ar}
 Place:- {place}
 Status:- {status}
 Detailed link:- {urlo}
-<u><b>Ekart Search Completed By Fire-X.
+<u><b>Ekart Search Completed By firebot.
 """
     await borg.send_message(
         event.chat_id,

@@ -5,8 +5,8 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 from telethon.utils import get_input_location
 
-from Fire-X import CMD_HELP, sclient
-from Fire-X.utils import edit_or_reply, fire_on_cmd, sudo_cmd
+from firebot import CMD_HELP, sclient
+from firebot.utils import edit_or_reply, fire_on_cmd, sudo_cmd
 
 
 @fire.on(fire_on_cmd("info ?(.*)"))

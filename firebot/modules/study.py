@@ -4,7 +4,7 @@ import datetime
 from telethon import events
 from telethon.tl import functions, types
 
-from Fire-X import ALIVE_NAME
+from firebot import ALIVE_NAME
 
 from ..utils import admin_cmd
 

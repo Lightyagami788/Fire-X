@@ -3,8 +3,8 @@ from google_trans_new import google_translator
 from googletrans import LANGUAGES
 from langdetect import detect
 
-from Fire-X import CMD_HELP
-from Fire-X.utils import edit_or_reply, fire_on_cmd, sudo_cmd
+from firebot import CMD_HELP
+from firebot.utils import edit_or_reply, fire_on_cmd, sudo_cmd
 
 
 @fire.on(fire_on_cmd("tr ?(.*)"))

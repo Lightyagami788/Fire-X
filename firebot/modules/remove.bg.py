@@ -4,8 +4,8 @@ from datetime import datetime
 
 import requests
 
-from Fire-X import CMD_HELP
-from Fire-X.utils import fire_on_cmd
+from firebot import CMD_HELP
+from firebot.utils import fire_on_cmd
 
 
 @fire.on(fire_on_cmd("rmbg ?(.*)"))
@@ -58,7 +58,7 @@ async def _(event):
         end = datetime.now()
         ms = (end - start).seconds
         await event.edit(
-            "Removed image's Background in {} seconds, powered by Fire-X".format(ms)
+            "Removed image's Background in {} seconds, powered by firebot".format(ms)
         )
     else:
         await event.edit(

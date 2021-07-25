@@ -1,6 +1,6 @@
 from sqlalchemy import Column, UnicodeText
 
-from Fire-X.modules.sql_helper import BASE, SESSION
+from firebot.modules.sql_helper import BASE, SESSION
 
 
 class Fed(BASE):

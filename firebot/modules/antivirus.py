@@ -1,7 +1,7 @@
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
-from Fire-X import CMD_HELP
+from firebot import CMD_HELP
 
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 

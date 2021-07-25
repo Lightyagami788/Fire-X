@@ -2,8 +2,8 @@ from asyncio import sleep
 
 from telethon.errors import rpcbaseerrors
 
-from Fire-X import BOTLOG, BOTLOG_CHATID, CMD_HELP
-from Fire-X.utils import errors_handler, register
+from firebot import BOTLOG, BOTLOG_CHATID, CMD_HELP
+from firebot.utils import errors_handler, register
 
 
 @register(outgoing=True, pattern="^.purge$")

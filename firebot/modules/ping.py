@@ -1,9 +1,9 @@
 import time
 
-from Fire-X import ALIVE_NAME, CMD_HELP
-from Fire-X.utils import admin_cmd, sudo_cmd
+from firebot import ALIVE_NAME, CMD_HELP
+from firebot.utils import admin_cmd, sudo_cmd
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Fire-X"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "firebot"
 
 
 @borg.on(admin_cmd(pattern="ping$"))

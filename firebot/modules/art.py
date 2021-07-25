@@ -1,8 +1,8 @@
-from Fire-X import ALIVE_NAME, CMD_HELP
+from firebot import ALIVE_NAME, CMD_HELP
 
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 
-DEF = str(ALIVE_NAME) if ALIVE_NAME else "Fire-X"
+DEF = str(ALIVE_NAME) if ALIVE_NAME else "firebot"
 
 
 @bot.on(admin_cmd(pattern="ded (.*)"))

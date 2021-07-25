@@ -1,5 +1,5 @@
 """
-Telegram Channel Media Downloader Plugin for Fire-X.
+Telegram Channel Media Downloader Plugin for firebot.
 usage: .geta channel_username [will  get all media from channel, tho there is limit of 3000 there to prevent API limits.]
        .getc number_of_messsages channel_username  
 By: @Zero_cool7870
@@ -9,7 +9,7 @@ import subprocess
 
 from uniborg.util import fire_on_cmd
 
-from Fire-X import CMD_HELP
+from firebot import CMD_HELP
 
 
 @fire.on(fire_on_cmd(pattern="getc"))

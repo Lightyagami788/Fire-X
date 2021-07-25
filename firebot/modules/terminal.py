@@ -1,11 +1,11 @@
 import asyncio
 import os
 
-from Fire-X import ALIVE_NAME, bot
+from firebot import ALIVE_NAME, bot
 
 from ..utils import admin_cmd
 
-DARKCOBRA = str(ALIVE_NAME) if ALIVE_NAME else "Fire-X"
+DARKCOBRA = str(ALIVE_NAME) if ALIVE_NAME else "firebot"
 
 running_processes: dict = {}
 

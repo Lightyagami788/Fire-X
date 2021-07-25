@@ -23,8 +23,8 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 from uniborg.util import fire_on_cmd
 
-from Fire-X import CMD_HELP
-from Fire-X.utils import register
+from firebot import CMD_HELP
+from firebot.utils import register
 
 # ================= CONSTANT =================
 RENDISTR = [
@@ -907,7 +907,7 @@ async def vapor(vpr):
 async def source(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit(
-            "Hello , User I Am Using [Fire-X](https://github.com/Chrisdroid1/Fire-X) ! Worth A Try 😌"
+            "Hello , User I Am Using [firebot](https://github.com/Chrisdroid1/firebot) ! Worth A Try 😌"
         )
 
 
@@ -1101,7 +1101,7 @@ async def faces(owo):
 
 @register(outgoing=True, pattern="^.react$")
 async def react_meme(react):
-    """Make your Fire-X react to everything."""
+    """Make your firebot react to everything."""
     if not react.text[0].isalpha() and react.text[0] not in ("/", "#", "@", "!"):
         await react.edit(random.choice(FACEREACTS))
 
@@ -1530,7 +1530,7 @@ CMD_HELP.update(
 \n\n.owo\
 \nUsage: UwU\
 \n\n.react\
-\nUsage: Make your Fire-X react to everything.\
+\nUsage: Make your firebot react to everything.\
 \n\n.slap\
 \nUsage: reply to slap them with random objects !!\
 \n\n.cry\

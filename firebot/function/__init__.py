@@ -37,7 +37,7 @@ from youtube_dl.utils import (
     XAttrMetadataError,
 )
 
-from Fire-X.utils import load_module
+from firebot.utils import load_module
 
 SIZE_UNITS = ["B", "KB", "MB", "GB", "TB", "PB"]
 BASE_URL = "https://isubtitles.org"
@@ -46,10 +46,10 @@ import zipfile
 
 import aiohttp
 
-from Fire-X.Configs import Config
+from firebot.Configs import Config
 
 sedpath = Config.TMP_DOWNLOAD_DIRECTORY
-from Fire-X import logging
+from firebot import logging
 
 logger = logging.getLogger("[--WARNING--]")
 if not os.path.isdir(sedpath):
@@ -177,7 +177,7 @@ async def get_all_modules(event, borg, channel_id):
     await event.edit(f"**Found : {len_p} Plugins. Trying To Install**")
     for sed in a_plugins:
         try:
-            downloaded_file_name = await borg.download_media(sed, "Fire-X/modules/")
+            downloaded_file_name = await borg.download_media(sed, "firebot/modules/")
             if "(" not in downloaded_file_name:
                 path1 = Path(downloaded_file_name)
                 shortname = path1.stem
@@ -476,10 +476,10 @@ async def apk_dl(app_name, path, event):
         for link in result:
             dl_link = link.get("href")
             r = requests.get(dl_link)
-            with open(f"{path}/{name}@Fire-X.apk", "wb") as f:
+            with open(f"{path}/{name}@firebot.apk", "wb") as f:
                 f.write(r.content)
     await event.edit("`Apk, Downloaded. Let me Upload It here.`")
-    final_path = f"{path}/{name}@Fire-X.apk"
+    final_path = f"{path}/{name}@firebot.apk"
     return final_path, name
 
 
@@ -567,7 +567,7 @@ async def _ytdl(url, is_it, event, tgbot):
         )
         await event.edit(
             file=lol_m,
-            text=f"{ytdl_data['title']} \n**Uploaded Using Fire-X**",
+            text=f"{ytdl_data['title']} \n**Uploaded Using firebot**",
         )
         os.remove(f"{ytdl_data['id']}.mp3")
     elif video:
@@ -597,7 +597,7 @@ async def _ytdl(url, is_it, event, tgbot):
 
 async def _deezer_dl(word, event, tgbot):
     await event.edit(
-        "`Ok Downloading This Audio - Please Wait.` \n**Powered By Fire-X**"
+        "`Ok Downloading This Audio - Please Wait.` \n**Powered By firebot**"
     )
     link = f"https://api.deezer.com/search?q={word}&limit=1"
     dato = requests.get(url=link).json()
@@ -618,8 +618,8 @@ async def _deezer_dl(word, event, tgbot):
 **Song Name :** {urlhp.get("title")}
 **Duration :** {urlhp.get('duration')} Seconds
 **Artist :** {polu.get("name")}
-Music Downloaded And Uploaded By Fire-X
-Get Your Fire-X From Fire-X"""
+Music Downloaded And Uploaded By firebot
+Get Your firebot From firebot"""
     await event.edit("Song Downloaded.  Waiting To Upload. 🥳🤗")
     c_time = time.time()
     uploaded_file = await upload_file(

@@ -1,13 +1,13 @@
-"""Check if Fire-X alive. If you change these, you become the gayest gay such that even the gay world will disown you."""
+"""Check if firebot alive. If you change these, you become the gayest gay such that even the gay world will disown you."""
 # CREDITS: @WhySooSerious, @Sur_vivor
 import time
 
 from telethon import version
 from uniborg.util import fire_on_cmd, sudo_cmd
 
-from Fire-X import ALIVE_NAME, CMD_HELP, Lastupdate
-from Fire-X.Configs import Config
-from Fire-X.modules import currentversion
+from firebot import ALIVE_NAME, CMD_HELP, Lastupdate
+from firebot.Configs import Config
+from firebot.modules import currentversion
 
 
 # Functions
@@ -40,7 +40,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 uptime = get_readable_time((time.time() - Lastupdate))
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Fire-X"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "firebot"
 PM_IMG = Config.ALIVE_IMAGE
 pm_caption = "  __**★ғɪʀᴇ-x ɪs ʀᴜɴɴɪɴɢ sᴜᴄᴇssғᴜʟʟʏ★**__\n\n"
 
@@ -53,7 +53,7 @@ pm_caption += f"┣•➳➠ `ᴜᴘᴛɪᴍᴇ:` `{uptime}`\n"
 pm_caption += f"┣•➳➠ `ᴄʜᴀɴɴᴇʟ:` [ᴊᴏɪɴ](https://t.me/Fire_X_CHANNEL)\n"
 pm_caption += f"┗━━━━━━━━━━━━━━━━━━━\n"
 pm_caption += f" ||•|| sᴇᴄᴜʀɪᴛʏ ʙʏ ғɪʀᴇ-x ||•||\n"
-pm_caption += " [ɢɪᴛʜᴜʙ](https://github.com/Chrisdroid1/Fire-X) • [ɢʀᴏᴜᴘ](https://t.me/FireXUserBot)"
+pm_caption += " [ɢɪᴛʜᴜʙ](https://github.com/Chrisdroid1/firebot) • [ɢʀᴏᴜᴘ](https://t.me/FireXUserBot)"
 
 
 @fire.on(fire_on_cmd(pattern=r"alive"))
@@ -69,6 +69,6 @@ CMD_HELP.update(
     {
         "alive": "**ALive**\
 \n\n**Syntax : **`.alive`\
-\n**Usage :** Check if Fire-X UserBot is Alive"
+\n**Usage :** Check if firebot UserBot is Alive"
     }
 )

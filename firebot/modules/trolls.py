@@ -7,8 +7,8 @@ from telegraph import exceptions, upload_file
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 from validators.url import url
 
-from Fire-X import *
-from Fire-X import CMD_HELP
+from firebot import *
+from firebot import CMD_HELP
 
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 

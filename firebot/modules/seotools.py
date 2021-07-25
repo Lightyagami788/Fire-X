@@ -1,7 +1,7 @@
 import os
 
-from Fire-X import CMD_HELP
-from Fire-X.utils import admin_cmd
+from firebot import CMD_HELP
+from firebot.utils import admin_cmd
 
 
 @fire.on(admin_cmd(pattern="seo (.*)"))
@@ -19,7 +19,7 @@ async def _(event):
         await event.client.send_file(
             event.chat_id,
             "seo.html",
-            caption=f"**Site SEO Analysed Successfully\n\nNote: Open This File With Chrome Or Any Browser\n\n\nSite Analysed By Fire-X\nGet Your superpowers With** [Fire-X](github.com/chrisdroid1/Fire-X)",
+            caption=f"**Site SEO Analysed Successfully\n\nNote: Open This File With Chrome Or Any Browser\n\n\nSite Analysed By firebot\nGet Your superpowers With** [firebot](github.com/chrisdroid1/firebot)",
         )
         com = "rm seo.html"
         os.system(com)

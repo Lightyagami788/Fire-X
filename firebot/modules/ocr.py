@@ -2,8 +2,8 @@ import os
 
 import requests
 
-from Fire-X import CMD_HELP, OCR_SPACE_API_KEY, TEMP_DOWNLOAD_DIRECTORY, bot
-from Fire-X.utils import register
+from firebot import CMD_HELP, OCR_SPACE_API_KEY, TEMP_DOWNLOAD_DIRECTORY, bot
+from firebot.utils import register
 
 
 async def ocr_space_file(

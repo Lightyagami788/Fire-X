@@ -1,7 +1,7 @@
 from telethon.events import ChatAction
 
-from Fire-X import bot, sclient
-from Fire-X.Configs import Config
+from firebot import bot, sclient
+from firebot.Configs import Config
 
 """Bans Spammers/Scammer At time Of Arrival 
 If You Add Him The Bot Won't Restrict."""

@@ -10,7 +10,7 @@ from urllib.parse import quote_plus
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-from Fire-X import CMD_HELP
+from firebot import CMD_HELP
 
 from ..utils import admin_cmd
 
@@ -109,7 +109,7 @@ async def carbon_api(e):
         await e.client.send_file(
             e.chat_id,
             file,
-            caption="Carbonised by [Fire-X](https://github.com/chrisdroid1/Fire-X)",
+            caption="Carbonised by [firebot](https://github.com/chrisdroid1/firebot)",
             force_document=False,
             reply_to=e.message.reply_to_msg_id,
         )

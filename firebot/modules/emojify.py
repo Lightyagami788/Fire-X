@@ -5,8 +5,8 @@ Userbot plugin for CatUserbot
 """
 import emoji
 
-from Fire-X import CMD_HELP
-from Fire-X.modules import fonts as emojify
+from firebot import CMD_HELP
+from firebot.modules import fonts as emojify
 
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 

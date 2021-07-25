@@ -8,7 +8,7 @@
 
 import asyncio
 
-from Fire-X import pro
+from firebot import pro
 
 from ..utils import admin_cmd
 

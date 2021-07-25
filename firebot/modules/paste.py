@@ -5,7 +5,7 @@ from datetime import datetime
 import requests
 from uniborg.util import fire_on_cmd, sudo_cmd
 
-from Fire-X import CMD_HELP
+from firebot import CMD_HELP
 
 logging.basicConfig(
     format="[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s", level=logging.WARNING

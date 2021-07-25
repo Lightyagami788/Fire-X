@@ -3,8 +3,8 @@ import os
 from cryptosteganography import CryptoSteganography
 from telethon.tl.types import MessageMediaPhoto
 
-from Fire-X import CMD_HELP
-from Fire-X.utils import fire_on_cmd, sudo_cmd
+from firebot import CMD_HELP
+from firebot.utils import fire_on_cmd, sudo_cmd
 
 sedpath = "./firedevs/"
 if not os.path.isdir(sedpath):

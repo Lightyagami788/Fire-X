@@ -6,9 +6,9 @@ from pytz import country_names as c_n
 from pytz import country_timezones as c_tz
 from pytz import timezone as tz
 
-from Fire-X import CMD_HELP
-from Fire-X import OPEN_WEATHER_MAP_APPID as OWM_API
-from Fire-X.utils import fire_on_cmd
+from firebot import CMD_HELP
+from firebot import OPEN_WEATHER_MAP_APPID as OWM_API
+from firebot.utils import fire_on_cmd
 
 # ===== CONSTANT =====
 DEFCITY = "Ahmedabad"
@@ -132,7 +132,7 @@ async def get_weather(weather):
 
 @fire.on(fire_on_cmd(pattern="setcity(?: |$)(.*)"))
 async def set_default_city(city):
-    """For .ctime command, change the default Fire-X country for date and time commands."""
+    """For .ctime command, change the default firebot country for date and time commands."""
 
     if not OWM_API:
         await city.edit("`Get an API key from` https://openweathermap.org/ `first.`")

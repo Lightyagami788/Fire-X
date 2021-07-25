@@ -1,13 +1,13 @@
 import asyncio
 
-from Fire-X.function import fetch_feds
-from Fire-X.modules.sql_helper.feds_sql import (
+from firebot.function import fetch_feds
+from firebot.modules.sql_helper.feds_sql import (
     add_fed,
     get_all_feds,
     is_fed_indb,
     rmfed,
 )
-from Fire-X.utils import fire_on_cmd
+from firebot.utils import fire_on_cmd
 
 chnnl_grp = Config.FBAN_GROUP
 

@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from Fire-X.utils import edit_or_reply, fire_on_cmd
+from firebot.utils import edit_or_reply, fire_on_cmd
 
 
 @fire.on(fire_on_cmd("gettime ?(.*)"))  # pylint:disable=E0602

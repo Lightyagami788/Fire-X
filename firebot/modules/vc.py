@@ -1,7 +1,7 @@
 from telethon.tl.functions.phone import CreateGroupCallRequest as startvc
 from telethon.tl.functions.phone import DiscardGroupCallRequest as stopvc
 
-from Fire-X.events import register
+from firebot.events import register
 
 
 async def get_call(event):

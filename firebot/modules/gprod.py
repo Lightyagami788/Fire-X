@@ -2,8 +2,8 @@ marculs = 9
 from telethon.tl.functions.channels import EditAdminRequest
 from telethon.tl.types import ChatAdminRights, MessageEntityMentionName
 
-from Fire-X import bot as borg
-from Fire-X.utils import admin_cmd
+from firebot import bot as borg
+from firebot.utils import admin_cmd
 
 
 async def get_full_user(event):

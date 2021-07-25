@@ -6,8 +6,8 @@ import textwrap
 from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterDocument
 
-from Fire-X import CMD_HELP
-from Fire-X.utils import fire_on_cmd, sudo_cmd
+from firebot import CMD_HELP
+from firebot.utils import fire_on_cmd, sudo_cmd
 
 # RegEx by https://t.me/c/1220993104/500653 ( @SnapDragon7410 )
 
@@ -32,7 +32,7 @@ async def sticklet(event):
         return
     if event.reply_to_msg_id:
         reply_message = await event.get_reply_message()
-    # delete the Fire-X command,
+    # delete the firebot command,
     # i don't know why this is required
     await event.delete()
     # https://docs.python.org/3/library/textwrap.html#textwrap.wrap
@@ -89,7 +89,7 @@ async def sticklet(event):
         return
     if event.reply_to_msg_id:
         reply_message = await event.get_reply_message()
-    # delete the Fire-X command,
+    # delete the firebot command,
     # i don't know why this is required
     await event.delete()
     # https://docs.python.org/3/library/textwrap.html#textwrap.wrap

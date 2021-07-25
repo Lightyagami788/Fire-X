@@ -5,9 +5,9 @@ import os
 from telethon import events, functions
 from telethon.tl.functions.users import GetFullUserRequest
 
-from Fire-X import ALIVE_NAME, CUSTOM_PMPERMIT, lang
-from Fire-X.Configs import Config
-from Fire-X.utils import fire_on_cmd
+from firebot import ALIVE_NAME, CUSTOM_PMPERMIT, lang
+from firebot.Configs import Config
+from firebot.utils import fire_on_cmd
 
 from .sql_helper import pmpermit_sql as pmpermit_sql
 

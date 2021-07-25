@@ -6,8 +6,8 @@ import requests
 from PIL import Image
 from validators.url import url
 
-from Fire-X import CMD_HELP, bot
-from Fire-X.tweet import (
+from firebot import CMD_HELP, bot
+from firebot.tweet import (
     bhautweet,
     johnnytweet,
     jtweet,
@@ -15,7 +15,7 @@ from Fire-X.tweet import (
     moditweet,
     sunnytweet,
 )
-from Fire-X.utils import admin_cmd
+from firebot.utils import admin_cmd
 
 EMOJI_PATTERN = re.compile(
     "["

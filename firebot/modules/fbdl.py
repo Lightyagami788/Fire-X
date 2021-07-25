@@ -4,8 +4,8 @@ from datetime import datetime
 
 import requests
 
-from Fire-X import CMD_HELP
-from Fire-X.utils import admin_cmd
+from firebot import CMD_HELP
+from firebot.utils import admin_cmd
 
 firethumb = "./resources/IMG_20210719_203714_817.jpg"
 
@@ -59,7 +59,7 @@ async def _(event):
 
     kk = f"{filename}.mp4"
     caption = (
-        f"Facebook Video Successfully by Fire-X.\nGet Your Fire-X From @FIRE_X_CHANNEL."
+        f"Facebook Video Successfully by firebot.\nGet Your firebot From @FIRE_X_CHANNEL."
     )
 
     await borg.send_message(

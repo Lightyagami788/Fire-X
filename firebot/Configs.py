@@ -33,7 +33,7 @@ if ENV:
             "HASH_TO_TORRENT_API", "https://example.com/torrent/{}"
         )
         # This is required for the @telegraph functionality.
-        TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "Fire-X")
+        TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "firebot")
         # Get a Free API Key from OCR.Space
         OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
         DEEP_API_KEY = os.environ.get("DEEP_API_KEY", None)
@@ -53,7 +53,7 @@ if ENV:
         # DO NOT EDIT BELOW THIS LINE IF YOU DO NOT KNOW WHAT YOU ARE DOING
         # TG API limit. A message can have maximum 4096 characters!
         MAX_MESSAGE_SIZE_LIMIT = 4095
-        # set blacklist_chats where you do not want Fire-X’s features
+        # set blacklist_chats where you do not want firebot’s features
         UB_BLACK_LIST_CHAT = set(
             int(x) for x in os.environ.get("UB_BLACK_LIST_CHAT", "").split()
         )
@@ -162,7 +162,7 @@ if ENV:
         GPLINKS_API_KEY = os.environ.get("GPLINKS_API_KEY", None)
         OPEN_LOAD_KEY = os.environ.get("OPEN_LOAD_KEY", None)
         UPSTREAM_REPO = os.environ.get(
-            "UPSTREAM_REPO", "https://github.com/Chrisdroid1/Fire-X"
+            "UPSTREAM_REPO", "https://github.com/Chrisdroid1/firebot"
         )
         ALIVE_IMAGE = os.environ.get("ALIVE_IMAGE", None)
         ASSISTANT_START_PIC = os.environ.get(

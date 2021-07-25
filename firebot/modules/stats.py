@@ -3,7 +3,7 @@ from datetime import datetime
 from telethon.tl.types import Channel, Chat, User
 from uniborg.util import fire_on_cmd
 
-from Fire-X import CMD_HELP, bot
+from firebot import CMD_HELP, bot
 
 
 @bot.on(fire_on_cmd(pattern=r"stats"))

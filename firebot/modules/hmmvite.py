@@ -7,8 +7,8 @@ from telethon.tl import functions
 from telethon.tl.functions.channels import GetFullChannelRequest
 from telethon.tl.functions.messages import GetFullChatRequest
 
-from Fire-X import CMD_HELP
-from Fire-X.utils import admin_cmd, edit_or_reply, sudo_cmd
+from firebot import CMD_HELP
+from firebot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
 async def get_chatinfo(event):

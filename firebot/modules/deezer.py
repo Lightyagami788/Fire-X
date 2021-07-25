@@ -7,8 +7,8 @@ import requests
 import wget
 from telethon.tl.types import DocumentAttributeAudio
 
-from Fire-X.function.FastTelethon import upload_file
-from Fire-X.utils import edit_or_reply, fire_on_cmd, sudo_cmd
+from firebot.function.FastTelethon import upload_file
+from firebot.utils import edit_or_reply, fire_on_cmd, sudo_cmd
 
 
 async def progress(current, total, event, start, type_of_ps, file_name=None):
@@ -107,7 +107,7 @@ async def _(event):
 **Song Name :** {urlhp.get("title")}
 **Duration :** {urlhp.get('duration')} Seconds
 **Artist :** {polu.get("name")}
-Music Downloaded And Uploaded By Fire-X Userbot
+Music Downloaded And Uploaded By firebot Userbot
 Get Your FIRE-X From @FIRE_X_CHANNEL"""
     await ommhg.edit("Song Downloaded.  Waiting To Upload. 🥳🤗")
     c_time = time.time()

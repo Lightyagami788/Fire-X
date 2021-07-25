@@ -7,7 +7,7 @@ import numpy as np
 from pydub import AudioSegment
 from telethon import types
 
-from Fire-X.utils import admin_cmd
+from firebot.utils import admin_cmd
 
 
 @fire.on(admin_cmd(pattern="bassbost ?(.*)"))
@@ -72,7 +72,7 @@ async def __(message):
             m,
             reply_to=reply.id,
             voice_note=True,
-            caption="Bass Boosted, \nDone By Fire-X",
+            caption="Bass Boosted, \nDone By firebot",
         )
         os.remove(m)
     else:
@@ -92,7 +92,7 @@ async def __(message):
                     performer="BassBoost",
                 )
             ],
-            caption="Bass Boosted, \nDone By Fire-X",
+            caption="Bass Boosted, \nDone By firebot",
         )
         os.remove(m)
     await message.delete()

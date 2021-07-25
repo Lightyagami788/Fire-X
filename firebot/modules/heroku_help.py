@@ -5,8 +5,8 @@ import os
 import heroku3
 import requests
 
-from Fire-X.function.heroku_helper import HerokuHelper
-from Fire-X.utils import edit_or_reply, fire_on_cmd, sudo_cmd
+from firebot.function.heroku_helper import HerokuHelper
+from firebot.utils import edit_or_reply, fire_on_cmd, sudo_cmd
 
 Heroku = heroku3.from_key(Var.HEROKU_API_KEY)
 heroku_api = "https://api.heroku.com"

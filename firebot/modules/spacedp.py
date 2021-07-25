@@ -7,8 +7,8 @@ import urllib
 import requests
 from telethon.tl import functions
 
-from Fire-X import CMD_HELP
-from Fire-X.utils import fire_on_cmd
+from firebot import CMD_HELP
+from firebot.utils import fire_on_cmd
 
 # Space lovers
 COLLECTION_STRINGS = [

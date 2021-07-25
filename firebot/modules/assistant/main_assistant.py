@@ -8,15 +8,15 @@ from telethon import Button, custom, events, functions
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.utils import pack_bot_file_id
 
-from Fire-X import bot
-from Fire-X.Configs import Config
-from Fire-X.modules.sql_helper.blacklist_assistant import (
+from firebot import bot
+from firebot.Configs import Config
+from firebot.modules.sql_helper.blacklist_assistant import (
     add_nibba_in_db,
     is_he_added,
     removenibba,
 )
-from Fire-X.modules.sql_helper.botusers_sql import add_me_in_db, his_userid
-from Fire-X.modules.sql_helper.idadder_sql import (
+from firebot.modules.sql_helper.botusers_sql import add_me_in_db, his_userid
+from firebot.modules.sql_helper.idadder_sql import (
     add_usersid_in_db,
     already_added,
     get_all_users,
@@ -34,7 +34,7 @@ async def start(event):
     hmmwow = devlop.first_name
     vent = event.chat_id
     mypic = Config.ASSISTANT_START_PIC
-    starttext = f"Hello, {firstname} ! Nice To Meet You, Well I Am {bot_id}, An Powerfull Assistant Bot. \n\nMy Master [{hmmwow}](tg://user?id={bot.uid}) \nYou Can Talk/Contact My Master Using This Bot. \n\nIf You Want Your Own Assistant You Can Deploy From Button Below. \n\nPowered By [Fire-X](github.com/chrisdroid1/Fire-X)"
+    starttext = f"Hello, {firstname} ! Nice To Meet You, Well I Am {bot_id}, An Powerfull Assistant Bot. \n\nMy Master [{hmmwow}](tg://user?id={bot.uid}) \nYou Can Talk/Contact My Master Using This Bot. \n\nIf You Want Your Own Assistant You Can Deploy From Button Below. \n\nPowered By [firebot](github.com/chrisdroid1/firebot)"
     if event.sender_id == bot.uid:
         await tgbot.send_message(
             vent,
@@ -60,7 +60,7 @@ async def start(event):
             caption=starttext,
             link_preview=False,
             buttons=[
-                [custom.Button.inline("Deploy your Fire-X", data="deploy")],
+                [custom.Button.inline("Deploy your firebot", data="deploy")],
                 [Button.url("Contact Dev ❓", "t.me/Mrkahno")],
             ],
         )
@@ -77,10 +77,10 @@ async def help(event):
     if event.query.user_id is not bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message="You Can Deploy Fire-X In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
+            message="You Can Deploy firebot In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
             buttons=[
                 [Button.url("Deploy Tutorial is coming soon 📺", "coming soon")],
-                [Button.url("Github Repo ❓", "github.com/chrisdroid1/Fire-X")],
+                [Button.url("Github Repo ❓", "github.com/chrisdroid1/firebot")],
             ],
         )
 

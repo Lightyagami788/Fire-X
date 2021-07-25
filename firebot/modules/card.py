@@ -1,11 +1,11 @@
 from faker import Faker as dc
 
-from Fire-X import bot as Fire-X
+from firebot import bot as firebot
 
 from ..utils import admin_cmd as wtf
 
 
-@Fire-X.on(wtf("card"))
+@firebot.on(wtf("card"))
 async def _firee(fire):
     cyber = dc()
     killer = cyber.name()

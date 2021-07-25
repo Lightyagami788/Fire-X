@@ -1,5 +1,5 @@
 try:
-    from Fire-X.modules.sql_helper import BASE, SESSION
+    from firebot.modules.sql_helper import BASE, SESSION
 except ImportError:
     raise AttributeError
 

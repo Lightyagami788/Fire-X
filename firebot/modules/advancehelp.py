@@ -1,5 +1,5 @@
-from Fire-X import CMD_HELP
-from Fire-X.utils import fire_on_cmd, sudo_cmd
+from firebot import CMD_HELP
+from firebot.utils import fire_on_cmd, sudo_cmd
 
 
 @fire.on(sudo_cmd(pattern="ahelp ?(.*)", allow_sudo=True))

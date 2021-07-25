@@ -5,7 +5,7 @@ import cv2
 import requests
 from telegraph import upload_file
 
-from Fire-X import bot
+from firebot import bot
 
 from ..utils import admin_cmd
 

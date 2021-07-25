@@ -8,8 +8,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 
-from Fire-X import CHROME_DRIVER, CMD_HELP, GOOGLE_CHROME_BIN
-from Fire-X.utils import fire_on_cmd
+from firebot import CHROME_DRIVER, CMD_HELP, GOOGLE_CHROME_BIN
+from firebot.utils import fire_on_cmd
 
 CARBONLANG = "auto"
 LANG = "en"
@@ -88,7 +88,7 @@ async def carbon_api(e):
         await e.client.send_file(
             e.chat_id,
             file,
-            caption="<< `Here's your carbon!` \n **Carbonised By** [Fire-X](https://github.com/chrisdroid1/Fire-X)>>\n**Colour Scheme: **`{}`".format(
+            caption="<< `Here's your carbon!` \n **Carbonised By** [firebot](https://github.com/chrisdroid1/firebot)>>\n**Colour Scheme: **`{}`".format(
                 color_name
             ),
             force_document=True,

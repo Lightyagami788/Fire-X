@@ -1,4 +1,4 @@
 echo """
     FIREBOT
 """
-python3 -m Fire-X
+python3 -m firebot

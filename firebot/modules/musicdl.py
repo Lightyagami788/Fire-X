@@ -7,8 +7,8 @@ from telethon.errors.rpcerrorlist import (
 )
 from telethon.tl.functions.messages import ImportChatInviteRequest
 
-from Fire-X import CMD_HELP
-from Fire-X.utils import fire_on_cmd
+from firebot import CMD_HELP
+from firebot.utils import fire_on_cmd
 
 
 @fire.on(fire_on_cmd("sdd ?(.*)"))
@@ -37,7 +37,7 @@ async def _(event):
             await borg.send_file(
                 event.chat_id,
                 songh,
-                caption="🔆**Here's the requested song!**🔆\n`Check out` [Fire-X](https://github.com/Chrisdroid1/Fire-X)",
+                caption="🔆**Here's the requested song!**🔆\n`Check out` [firebot](https://github.com/Chrisdroid1/firebot)",
             )
             await event.delete()
         except YouBlockedUserError:

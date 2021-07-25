@@ -3,15 +3,15 @@ Syntax: .invite <User(s)>"""
 
 from telethon import functions
 
-from Fire-X.utils import fire_on_cmd
+from firebot.utils import fire_on_cmd
 
 """Invite the user(s) to the current chat
 Syntax: .invite <User(s)>"""
 
 from telethon import functions
 
-from Fire-X import CMD_HELP
-from Fire-X.utils import edit_or_reply, fire_on_cmd, sudo_cmd
+from firebot import CMD_HELP
+from firebot.utils import edit_or_reply, fire_on_cmd, sudo_cmd
 
 
 @fire.on(fire_on_cmd(pattern="invite ?(.*)"))

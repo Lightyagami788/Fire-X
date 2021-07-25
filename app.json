@@ -6,10 +6,10 @@
     "telegram",
     "fire-x",
     "plugin",
-    "telegram-Fire-X",
+    "telegram-firebot",
     "productivity"
   ],
-  "repository": "https://github.com/Chrisdroid1/Fire-X",
+  "repository": "https://github.com/Chrisdroid1/firebot",
   "website": "t.me/FIRE_X_CHANNEL",
   "success_url": "t.me/FIRE_X_CHANNEL",
   "stack": "container",
@@ -20,7 +20,7 @@
     },
     "TEMP_DOWNLOAD_DIRECTORY": {
       "description": "Where downloaded files will go.",
-      "value": "./Fire-X/DOWNLOADS/",
+      "value": "./firebot/DOWNLOADS/",
       "required": false
     },
     "ALIVE_NAME": {
@@ -66,7 +66,7 @@
       "required": false
     },
     "GIT_REPO_NAME": {
-      "description": "Your repo name Example: chrisdroid1/Fire-X, but GITHUB_ACCESS_TOKEN must be setup first.",
+      "description": "Your repo name Example: chrisdroid1/firebot, but GITHUB_ACCESS_TOKEN must be setup first.",
       "value": "",
       "required": false
     },

@@ -1,11 +1,11 @@
 import asyncio
 from collections import deque
 
-from Fire-X import ALIVE_NAME, CMD_HELP
+from firebot import ALIVE_NAME, CMD_HELP
 
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Fire-X"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "firebot"
 
 
 @bot.on(admin_cmd(pattern="stupid$"))

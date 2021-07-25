@@ -2,7 +2,7 @@ import random
 
 from uniborg.util import edit_or_reply, fire_on_cmd, sudo_cmd
 
-from Fire-X import CMD_HELP
+from firebot import CMD_HELP
 
 RUNSREACTS = [
     "`Congratulations and BRAVO!`",

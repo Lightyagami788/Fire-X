@@ -1,8 +1,8 @@
 import time
 from datetime import datetime
 
-from Fire-X.__init__ import Lastupdate
-from Fire-X.utils import fire_on_cmd
+from firebot.__init__ import Lastupdate
+from firebot.utils import fire_on_cmd
 
 
 def get_readable_time(seconds: int) -> str:
@@ -43,4 +43,4 @@ async def _(event):
     end = datetime.now()
     (end - start).microseconds / 1000
     uptime = get_readable_time((time.time() - Lastupdate))
-    await event.edit(f"🔥 Fire-X Userbot Has Been Restarted Or Updated {uptime} Ago !")
+    await event.edit(f"🔥 firebot Userbot Has Been Restarted Or Updated {uptime} Ago !")

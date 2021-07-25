@@ -4,7 +4,7 @@ from datetime import datetime
 
 from uniborg.util import fire_on_cmd
 
-from Fire-X import CMD_HELP
+from firebot import CMD_HELP
 
 thumb_image_path = Config.TMP_DOWNLOAD_DIRECTORY + "/thumb_image.jpg"
 

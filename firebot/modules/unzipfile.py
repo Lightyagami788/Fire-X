@@ -5,8 +5,8 @@ import time as t
 import zipfile
 from datetime import datetime
 
-from Fire-X import CMD_HELP
-from Fire-X.utils import admin_cmd
+from firebot import CMD_HELP
+from firebot.utils import admin_cmd
 
 extracted = Config.TMP_DOWNLOAD_DIRECTORY + "extracted/"
 thumb_image_path = Config.TMP_DOWNLOAD_DIRECTORY + "/thumb_image.jpg"

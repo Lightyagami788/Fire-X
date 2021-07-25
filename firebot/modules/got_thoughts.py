@@ -9,7 +9,7 @@ import random
 
 from telethon import events
 
-from Fire-X import CMD_HELP
+from firebot import CMD_HELP
 
 
 @fire.on(events.NewMessage(pattern=r"\.gott", outgoing=True))

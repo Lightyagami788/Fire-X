@@ -4,8 +4,8 @@ for bot credits to @pureindialover
 
 from telethon.tl import functions
 
-from Fire-X import CMD_HELP
-from Fire-X.events import register
+from firebot import CMD_HELP
+from firebot.events import register
 
 
 @register(outgoing=True, pattern="^.create (b|g|c)(?: |$)(.*)")

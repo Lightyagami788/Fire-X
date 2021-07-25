@@ -2,8 +2,8 @@ from re import findall
 
 from search_engine_parser import GoogleSearch
 
-from Fire-X import CMD_HELP
-from Fire-X.utils import register
+from firebot import CMD_HELP
+from firebot.utils import register
 
 
 @register(outgoing=True, pattern=r"^\.gs (.*)")

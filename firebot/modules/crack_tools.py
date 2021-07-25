@@ -3,8 +3,8 @@ import os
 import requests
 from uniborg.util import fire_on_cmd
 
-from Fire-X import CMD_HELP
-from Fire-X.utils import admin_cmd, fire_on_cmd
+from firebot import CMD_HELP
+from firebot.utils import admin_cmd, fire_on_cmd
 
 data = {
     "User-Agent": "NordApp android (playstore/2.8.6) Android 9.0.0",
@@ -293,7 +293,7 @@ async def _(event):
         )
     elif Counter >= 1:
         file1 = open("goood.txt", "a")
-        file1.write("\nCHECKED BY Fire-X. ")
+        file1.write("\nCHECKED BY firebot. ")
         file1.close()
         await borg.send_file(
             event.chat_id,

@@ -5,8 +5,8 @@ import time
 
 from telethon.tl.functions.channels import LeaveChannelRequest
 
-from Fire-X import CMD_HELP
-from Fire-X.utils import fire_on_cmd, sudo_cmd
+from firebot import CMD_HELP
+from firebot.utils import fire_on_cmd, sudo_cmd
 
 
 @fire.on(fire_on_cmd("bye"))

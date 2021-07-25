@@ -11,7 +11,7 @@ from pySmartDL import SmartDL
 from telethon.errors import FloodWaitError
 from telethon.tl import functions
 
-from Fire-X import CMD_HELP
+from firebot import CMD_HELP
 
 from ..utils import admin_cmd, edit_or_reply
 
@@ -19,7 +19,7 @@ AUTONAME = os.environ.get("AUTONAME", None)
 DEFAULT_BIO = os.environ.get("DEFAULTBIO", None)
 DEFAULTUSERBIO = str(DEFAULT_BIO) if DEFAULT_BIO else " ᗯᗩᏆᎢᏆᑎᏀ ᏞᏆᏦᗴ ᎢᏆᗰᗴ  "
 CHANGE_TIME = int(os.environ.get("CHANGE_TIME", 60))
-DEFAULTUSER = str(AUTONAME) if AUTONAME else "Fire-X"
+DEFAULTUSER = str(AUTONAME) if AUTONAME else "firebot"
 
 FONT_FILE_TO_USE = "Fonts/vermin_vibes.ttf"
 global AUTOPICSTART
@@ -40,12 +40,12 @@ async def autopic(event):
     if event.fwd_from:
         return
     global AUTOPICSTART
-    downloaded_file_name = "Fire-X/original_pic.png"
+    downloaded_file_name = "firebot/original_pic.png"
     downloader = SmartDL(
         Var.DOWNLOAD_PFP_URL_CLOCK, downloaded_file_name, progress_bar=False
     )
     downloader.start(blocking=False)
-    photo = "Fire-X/photo_pfp.png"
+    photo = "firebot/photo_pfp.png"
     while not downloader.isFinished():
         pass
     input_str = event.pattern_match.group(1)
@@ -87,13 +87,13 @@ async def main(event):
     if event.fwd_from:
         return
     global DIGITALPICSTART
-    poto = "Fire-X/poto_pfp.png"
+    poto = "firebot/poto_pfp.png"
     cat = str(
         base64.b64decode(
             "aHR0cHM6Ly90ZWxlZ3JhLnBoL2ZpbGUvYWVhZWJlMzNiMWYzOTg4YTBiNjkwLmpwZw=="
         )
     )[2:51]
-    downloaded_file_name = "Fire-X/original_pic.png"
+    downloaded_file_name = "firebot/original_pic.png"
     downloader = SmartDL(cat, downloaded_file_name, progress_bar=False)
     downloader.start(blocking=False)
     if DIGITALPICSTART:
@@ -129,12 +129,12 @@ async def autopic(event):
     if event.fwd_from:
         return
     global BLOOMSTART
-    downloaded_file_name = "Fire-X/original_pic.png"
+    downloaded_file_name = "firebot/original_pic.png"
     downloader = SmartDL(
         Config.DOWNLOAD_PFP_URL_CLOCK, downloaded_file_name, progress_bar=True
     )
     downloader.start(blocking=False)
-    photo = "Fire-X/photo_pfp.png"
+    photo = "firebot/photo_pfp.png"
     while not downloader.isFinished():
         pass
     if BLOOMSTART:

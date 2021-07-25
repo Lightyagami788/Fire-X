@@ -1,7 +1,7 @@
 import asyncio
 
-from Fire-X import CMD_HELP
-from Fire-X.utils import fire_on_cmd
+from firebot import CMD_HELP
+from firebot.utils import fire_on_cmd
 
 
 # @command(pattern="^.cmds", outgoing=True)
@@ -9,7 +9,7 @@ from Fire-X.utils import fire_on_cmd
 async def install(event):
     if event.fwd_from:
         return
-    cmd = "ls Fire-X/modules"
+    cmd = "ls firebot/modules"
     process = await asyncio.create_subprocess_shell(
         cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
     )

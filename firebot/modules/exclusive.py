@@ -3,8 +3,8 @@ import asyncio
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
-from Fire-X import CMD_HELP
-from Fire-X.utils import admin_cmd
+from firebot import CMD_HELP
+from firebot.utils import admin_cmd
 
 
 @fire.on(admin_cmd(pattern=r"purl ?(.*)"))
@@ -17,7 +17,7 @@ async def _(event):
     reply_message = await event.get_reply_message()
     chat = "@FileToLinkDXBot"
     reply_message.sender
-    await event.edit("**Making public url...\n Powered by @Fire-X**")
+    await event.edit("**Making public url...\n Powered by @firebot**")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(

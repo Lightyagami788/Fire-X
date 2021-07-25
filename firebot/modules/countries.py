@@ -1,8 +1,8 @@
 import flag
 from countryinfo import CountryInfo
 
-from Fire-X import CMD_HELP
-from Fire-X.utils import admin_cmd
+from firebot import CMD_HELP
+from firebot.utils import admin_cmd
 
 
 @fire.on(admin_cmd(pattern="country (.*)"))
@@ -97,8 +97,8 @@ Time Zones:- {tom}
 Top Level Domain:- {lanester}
 wikipedia:- {wiki}</b>
 <u><b>
-Information Gathered By Fire-X.</u>
-Get Your Own Superpowers with <a href="github.com/Chrisdroid1/Fire-X"> Fire-X</a>.</b>
+Information Gathered By firebot.</u>
+Get Your Own Superpowers with <a href="github.com/Chrisdroid1/firebot"> firebot</a>.</b>
 """
 
     await borg.send_message(

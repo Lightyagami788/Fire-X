@@ -1,7 +1,7 @@
 import asyncio
 
-from Fire-X import CMD_HELP
-from Fire-X.modules.sql_helper.mute_sql import is_muted, mute, unmute
+from firebot import CMD_HELP
+from firebot.modules.sql_helper.mute_sql import is_muted, mute, unmute
 
 
 @command(outgoing=True, pattern=r"^.mute ?(\d+)?")

@@ -7,9 +7,9 @@ import os
 
 import pytesseract
 
-from Fire-X import CMD_HELP
-from Fire-X.Configs import Config
-from Fire-X.utils import fire_on_cmd
+from firebot import CMD_HELP
+from firebot.Configs import Config
+from firebot.utils import fire_on_cmd
 
 
 @fire.on(fire_on_cmd(pattern="read$"))

@@ -4,7 +4,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 from uniborg.util import fire_on_cmd
 
-from Fire-X import ALIVE_NAME, CMD_HELP
+from firebot import ALIVE_NAME, CMD_HELP
 
 SLAP_TEMPLATES = [
     "{user1} {hits} {user2} with a {item}.",
@@ -67,7 +67,7 @@ HIT = [
     "bashes",
 ]
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Fire-X"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "firebot"
 
 
 @fire.on(fire_on_cmd(pattern="slap ?(.*)", allow_sudo=True))

@@ -7,7 +7,7 @@ import cv2
 import numpy as np
 from PIL import Image
 
-from Fire-X import CMD_HELP, bot
+from firebot import CMD_HELP, bot
 
 from ..utils import admin_cmd
 
@@ -280,7 +280,7 @@ async def howitworks(event):
             event.chat.id,
             file="V.jpg",
             caption="""ㅤ                                            Check Difference
-                                                Done By Fire-X
+                                                Done By firebot
                                             <<Thanks to Devs""",
         )
     if x == 2:
@@ -288,7 +288,7 @@ async def howitworks(event):
             event.chat.id,
             file="H.jpg",
             caption="""ㅤ                                            Check Difference 
-                                                 Done By Fire-X
+                                                 Done By firebot
                                             <<Thanks to Devs""",
         )
     shutil.rmtree(path)

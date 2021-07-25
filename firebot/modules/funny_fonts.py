@@ -2,8 +2,8 @@
 import random
 import re
 
-from Fire-X import CMD_HELP
-from Fire-X.modules import fonts
+from firebot import CMD_HELP
+from firebot.modules import fonts
 
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 

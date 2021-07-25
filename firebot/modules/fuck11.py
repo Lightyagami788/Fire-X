@@ -13,7 +13,7 @@ import asyncio
 import random
 from asyncio import sleep
 
-from Fire-X import CMD_HELP, bot
+from firebot import CMD_HELP, bot
 
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 
@@ -277,7 +277,7 @@ async def runstrings(event):
     await edit_or_reply(event, txt)
 
 
-from Fire-X import CMD_HELP
+from firebot import CMD_HELP
 
 
 @bot.on(admin_cmd("newyear"))
@@ -517,7 +517,7 @@ async def _(event):
 [ 16:58:55] [START] service requested`""",
         """`[ 16:58:55] Tunnel Type HTTP Proxy ➔ SSH (Custom Payload)
 [ 16:58:55] [START] service requested
-[ 16:58:55] Network Status: CONNECTED  to WIFI "Fire-X UB"
+[ 16:58:55] Network Status: CONNECTED  to WIFI "firebot UB"
 [2021-01-12 16:58:55] Injector Service Started`""",
         """`[ 16:58:55] Tunnel Type HTTP Proxy ➔ SSH (Custom Payload)
 [ 16:58:55] [START] service requested
@@ -530,7 +530,7 @@ async def _(event):
 [ 16:58:55] Listening for incoming connection`""",
         """`[ 16:58:55] Tunnel Type HTTP Proxy ➔ SSH (Custom Payload)
 [ 16:58:55] [START] service requested
-[ 16:58:55] Network Status: CONNECTED  to WIFI "Fire-X"
+[ 16:58:55] Network Status: CONNECTED  to WIFI "firebot"
 [2021-01-12 16:58:55] Injector Service Started
 [ 16:58:55] Local IP: 192.188.800.100
 [ 16:58:55] Starting listening local port: 8989
@@ -563,7 +563,7 @@ async def _(event):
 [16:58:58] Key exchange algorithm: curve25519-sha256`""",
         """`[ 16:58:55] Tunnel Type HTTP Proxy ➔ SSH (Custom Payload)
 [ 16:58:55] [START] service requested
-[ 16:58:55] Network Status: CONNECTED  to WIFI "Fire-X"
+[ 16:58:55] Network Status: CONNECTED  to WIFI "firebot"
 [2021-01-12 16:58:55] Injector Service Started
 [ 16:58:55] Local IP: 192.188.800.100
 [ 16:58:55] Starting listening local port: 8989
@@ -582,7 +582,7 @@ async def _(event):
         """`
 [ 16:58:55] Tunnel Type HTTP Proxy ➔ SSH (Custom Payload)
 [ 16:58:55] [START] service requested
-[ 16:58:55] Network Status: CONNECTED  to WIFI "Fire-X"
+[ 16:58:55] Network Status: CONNECTED  to WIFI "firebot"
 [2021-01-12 16:58:55] Injector Service Started
 [ 16:58:55] Local IP: 192.188.800.100
 [ 16:58:55] Starting listening local port: 8989
@@ -599,16 +599,16 @@ async def _(event):
 [16:58:58] Hostkey fingerprint: 94:20:97:11:83:fd:f7:ca:c6:0d:61:17:79:5d:51:e3
 [16:58:58] Key exchange algorithm: curve25519-sha256
 [16:58:58] Using algorithm: aes256-ctr hmac-sha2-256-etm@sh.com
-[2021-01-12 16:58:58] Username: Fire-X
+[2021-01-12 16:58:58] Username: firebot
 [16:58:58] Server Message:
-⚡️ Fire-X Server 🎮&nbsp;
+⚡️ firebot Server 🎮&nbsp;
 🔥 Powered By FIRE-X USERBOT 
 ☬ Special Thanks To My Master
 `""",
         """`
 [ 16:58:55] Tunnel Type HTTP Proxy ➔ SSH (Custom Payload)
 [ 16:58:55] [START] service requested
-[ 16:58:55] Network Status: CONNECTED  to WIFI "Fire-X"
+[ 16:58:55] Network Status: CONNECTED  to WIFI "firebot"
 [2021-01-12 16:58:55] Injector Service Started
 [ 16:58:55] Local IP: 192.188.800.100
 [ 16:58:55] Starting listening local port: 8989
@@ -625,9 +625,9 @@ async def _(event):
 [16:58:58] Hostkey fingerprint: 94:20:97:11:83:fd:f7:ca:c6:0d:61:17:79:5d:51:e3
 [16:58:58] Key exchange algorithm: curve25519-sha256
 [16:58:58] Using algorithm: aes256-ctr hmac-sha2-256-etm@sh.com
-[2021-01-12 16:58:58] Username: Fire-X
+[2021-01-12 16:58:58] Username: firebot
 [16:58:58] Server Message:
-⚡️ Fire-X Server 🎮&nbsp;
+⚡️ firebot Server 🎮&nbsp;
 🔥 Powered By FIRE-X UB 
 ☬ Special Thanks To My Master
 ⭕️ NO DDOS !!!
@@ -638,12 +638,12 @@ async def _(event):
 ⭕️ NO SPAMMING !!!
 ⭕️ THIS IS NOT FOR SALE !!!⭕️ NO ILLEGAL ACTIVITES !!!
 ⭕️ AUTO REBOOT @ MIDNIGHT !!!
-⭕️Do Not Over Use This Service⭕️⚒ Configured by Fire-X
+⭕️Do Not Over Use This Service⭕️⚒ Configured by firebot
 `""",
         """`
 [ 16:58:55] Tunnel Type HTTP Proxy ➔ SSH (Custom Payload)
 [ 16:58:55] [START] service requested
-[ 16:58:55] Network Status: CONNECTED  to WIFI "Fire-X"
+[ 16:58:55] Network Status: CONNECTED  to WIFI "firebot"
 [2021-01-12 16:58:55] Injector Service Started
 [ 16:58:55] Local IP: 192.188.800.100
 [ 16:58:55] Starting listening local port: 8989
@@ -660,7 +660,7 @@ async def _(event):
 [16:58:58] Hostkey fingerprint: 94:20:97:11:83:fd:f7:ca:c6:0d:61:17:79:5d:51:e3
 [16:58:58] Key exchange algorithm: curve25519-sha256
 [16:58:58] Using algorithm: aes256-ctr hmac-sha2-256-etm@sh.com
-[2021-01-12 16:58:58] Username: Fire-X
+[2021-01-12 16:58:58] Username: firebot
 [16:58:58] Server Message:
 ⚡️ Fire-x Server 🎮&nbsp;
 🔥 Powered By FIREBOT 
@@ -715,7 +715,7 @@ async def _(event):
 ⭕️ NO SPAMMING !!!
 ⭕️ THIS IS NOT FOR SALE !!!⭕️ NO ILLEGAL ACTIVITES !!!
 ⭕️ AUTO REBOOT @ MIDNIGHT !!!
-⭕️Do Not Over Use This Service⭕️⚒ Configured by Fire-X  
+⭕️Do Not Over Use This Service⭕️⚒ Configured by firebot  
 
 
 
@@ -757,7 +757,7 @@ async def _(event):
 ⭕️ NO SPAMMING !!!
 ⭕️ THIS IS NOT FOR SALE !!!⭕️ NO ILLEGAL ACTIVITES !!!
 ⭕️ AUTO REBOOT @ MIDNIGHT !!!
-⭕️Do Not Over Use This Service⭕️⚒ Configured by Fire-X  
+⭕️Do Not Over Use This Service⭕️⚒ Configured by firebot  
 
 
 
@@ -807,7 +807,7 @@ async def _(event):
 ⭕️ NO SPAMMING !!!
 ⭕️ THIS IS NOT FOR SALE !!!⭕️ NO ILLEGAL ACTIVITES !!!
 ⭕️ AUTO REBOOT @ MIDNIGHT !!!
-⭕️Do Not Over Use This Service⭕️⚒ Configured by Fire-X  
+⭕️Do Not Over Use This Service⭕️⚒ Configured by firebot  
 
 
 

@@ -1,8 +1,8 @@
 import os
 import sys
 
-from Fire-X import CMD_HELP
-from Fire-X.utils import fire_on_cmd
+from firebot import CMD_HELP
+from firebot.utils import fire_on_cmd
 
 
 @fire.on(fire_on_cmd("restart"))
@@ -34,8 +34,8 @@ CMD_HELP.update(
     {
         "power_tools": "**Power Tools**\
 \n\n**Syntax : **`.restart`\
-\n**Usage :** restarts your  Fire-X.\
+\n**Usage :** restarts your  firebot.\
 \n\n**Syntax : **`.shutdown`\
-\n**Usage :** Shuts down your Fire-X."
+\n**Usage :** Shuts down your firebot."
     }
 )

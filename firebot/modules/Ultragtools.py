@@ -4,9 +4,9 @@ from telethon.events import ChatAction
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
 from telethon.tl.types import MessageEntityMentionName
 
-from Fire-X import CMD_HELP
-from Fire-X.modules.sql_helper.mute_sql import is_muted, mute, unmute
-from Fire-X.utils import fire_on_cmd
+from firebot import CMD_HELP
+from firebot.modules.sql_helper.mute_sql import is_muted, mute, unmute
+from firebot.utils import fire_on_cmd
 
 
 async def get_full_user(event):
@@ -50,27 +50,27 @@ async def get_user_sender_id(user, event):
 
 
 @fire.on(fire_on_cmd(pattern="ultragban ?(.*)"))
-async def gspider(Fire-X):
-    lol = Fire-X
+async def gspider(firebot):
+    lol = firebot
     sender = await lol.get_sender()
     me = await lol.client.get_me()
     if not sender.id == me.id:
         chris = await lol.reply("Gbanning This User !")
     else:
         chris = await lol.edit("Wait Processing.....")
-    me = await Fire-X.client.get_me()
+    me = await firebot.client.get_me()
     await chris.edit(f"Global Ban Is Coming ! Wait And Watch You Nigga")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
-    await Fire-X.get_chat()
+    await firebot.get_chat()
     a = b = 0
-    if Fire-X.is_private:
-        user = Fire-X.chat
-        reason = Fire-X.pattern_match.group(1)
+    if firebot.is_private:
+        user = firebot.chat
+        reason = firebot.pattern_match.group(1)
     else:
-        Fire-X.chat.title
+        firebot.chat.title
     try:
-        user, reason = await get_full_user(Fire-X)
+        user, reason = await get_full_user(firebot)
     except:
         pass
     try:
@@ -84,21 +84,21 @@ async def gspider(Fire-X):
                 f"**Didn't , Your Father Teach You ? That You Cant Gban Dev**"
             )
         try:
-            from Fire-X.modules.sql_helper.gmute_sql import gmute
+            from firebot.modules.sql_helper.gmute_sql import gmute
         except:
             pass
         try:
-            await Fire-X.client(BlockRequest(user))
+            await firebot.client(BlockRequest(user))
         except:
             pass
-        testFire-X = [
+        testfirebot = [
             d.entity.id
-            for d in await Fire-X.client.get_dialogs()
+            for d in await firebot.client.get_dialogs()
             if (d.is_group or d.is_channel)
         ]
-        for i in testFire-X:
+        for i in testfirebot:
             try:
-                await Fire-X.client.edit_permissions(i, user, view_messages=False)
+                await firebot.client.edit_permissions(i, user, view_messages=False)
                 a += 1
                 await chris.edit(f"**GBANNED // Total Affected Chats **: `{a}`")
             except:
@@ -116,27 +116,27 @@ async def gspider(Fire-X):
 
 
 @fire.on(fire_on_cmd(pattern="ultraungban ?(.*)"))
-async def gspider(Fire-X):
-    lol = Fire-X
+async def gspider(firebot):
+    lol = firebot
     sender = await lol.get_sender()
     me = await lol.client.get_me()
     if not sender.id == me.id:
         chris = await lol.reply("`Wait Let Me Process`")
     else:
         chris = await lol.edit("One Min ! ")
-    me = await Fire-X.client.get_me()
+    me = await firebot.client.get_me()
     await chris.edit(f"Trying To Ungban User !")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
-    await Fire-X.get_chat()
+    await firebot.get_chat()
     a = b = 0
-    if Fire-X.is_private:
-        user = Fire-X.chat
-        reason = Fire-X.pattern_match.group(1)
+    if firebot.is_private:
+        user = firebot.chat
+        reason = firebot.pattern_match.group(1)
     else:
-        Fire-X.chat.title
+        firebot.chat.title
     try:
-        user, reason = await get_full_user(Fire-X)
+        user, reason = await get_full_user(firebot)
     except:
         pass
     try:
@@ -148,21 +148,21 @@ async def gspider(Fire-X):
         if user.id == 1129957342:
             return await chris.edit("**You Cant Ungban A Dev !**")
         try:
-            from Fire-X.modules.sql_helper.gmute_sql import ungmute
+            from firebot.modules.sql_helper.gmute_sql import ungmute
         except:
             pass
         try:
-            await Fire-X.client(UnblockRequest(user))
+            await firebot.client(UnblockRequest(user))
         except:
             pass
-        testFire-X = [
+        testfirebot = [
             d.entity.id
-            for d in await Fire-X.client.get_dialogs()
+            for d in await firebot.client.get_dialogs()
             if (d.is_group or d.is_channel)
         ]
-        for i in testFire-X:
+        for i in testfirebot:
             try:
-                await Fire-X.client.edit_permissions(i, user, send_messages=True)
+                await firebot.client.edit_permissions(i, user, send_messages=True)
                 a += 1
                 await chris.edit(f"**UNGBANNING // AFFECTED CHATS - {a} **")
             except:
@@ -183,7 +183,7 @@ async def gspider(Fire-X):
 async def handler(rkG):
     if rkG.user_joined or rkG.user_added:
         try:
-            from Fire-X.modules.sql_helper.gmute_sql import is_gmuted
+            from firebot.modules.sql_helper.gmute_sql import is_gmuted
 
             guser = await rkG.get_user()
             gmuted = is_gmuted(guser.id)

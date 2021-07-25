@@ -1,15 +1,15 @@
 import io
 import os
 
-from Fire-X import CMD_HELP
-from Fire-X.Configs import Config
-from Fire-X.modules.sql_helper.broadcast_sql import (
+from firebot import CMD_HELP
+from firebot.Configs import Config
+from firebot.modules.sql_helper.broadcast_sql import (
     add_chnnl_in_db,
     already_added,
     get_all_chnnl,
     rm_channel,
 )
-from Fire-X.utils import fire_on_cmd
+from firebot.utils import fire_on_cmd
 
 loggy_grp = Config.PRIVATE_GROUP_ID
 

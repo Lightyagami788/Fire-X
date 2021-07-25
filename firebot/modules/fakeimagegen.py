@@ -2,8 +2,8 @@ import os
 
 import requests
 
-from Fire-X import CMD_HELP
-from Fire-X.utils import fire_on_cmd, sudo_cmd
+from firebot import CMD_HELP
+from firebot.utils import fire_on_cmd, sudo_cmd
 
 
 # hmm
@@ -19,11 +19,11 @@ async def _(event):
         with open("JUSTFIRE.jpg", "wb") as f:
             f.write(response.content)
 
-    captin = f"Fake Image By FIRE-X.\nGet Your Own Superpowers From [Fire-X](github.com/chrisdroid1/Fire-X)."
+    captin = f"Fake Image By FIRE-X.\nGet Your Own Superpowers From [firebot](github.com/chrisdroid1/firebot)."
     fole = "JUSTFIRE.jpg"
     await borg.send_file(event.chat_id, fole, caption=captin)
     await event.delete()
-    os.system("rm /root/Fire-X/JUSTFIRE.jpg ")
+    os.system("rm /root/firebot/JUSTFIRE.jpg ")
 
 
 CMD_HELP.update(

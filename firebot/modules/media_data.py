@@ -5,12 +5,12 @@ from typing import Tuple
 
 from telegraph import Telegraph
 
-from Fire-X import CMD_HELP
-from Fire-X.Configs import Config
-from Fire-X.utils import fire_on_cmd
+from firebot import CMD_HELP
+from firebot.Configs import Config
+from firebot.utils import fire_on_cmd
 
 telegraph = Telegraph()
-tgnoob = telegraph.create_account(short_name="Fire-X 🇮🇳")
+tgnoob = telegraph.create_account(short_name="firebot 🇮🇳")
 
 
 async def runcmd(cmd: str) -> Tuple[str, str, int, int]:

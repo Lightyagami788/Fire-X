@@ -3,7 +3,7 @@ import re
 from geopy.geocoders import Nominatim
 from telethon.tl import types
 
-from Fire-X import CMD_HELP, bot
+from firebot import CMD_HELP, bot
 
 from ..utils import admin_cmd
 

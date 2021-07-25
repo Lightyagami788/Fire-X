@@ -4,8 +4,8 @@ from collections import deque
 
 from telethon.tl.functions.channels import LeaveChannelRequest
 
-from Fire-X import CMD_HELP, bot
-from Fire-X.utils import fire_on_cmd
+from firebot import CMD_HELP, bot
+from firebot.utils import fire_on_cmd
 
 
 @fire.on(fire_on_cmd("leave$"))
@@ -76,14 +76,14 @@ async def _(event):
 # @register(outgoing=True, pattern="^.source$")
 async def source(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("https://github.com/Chrisdroid1/Fire-X")
+        await e.edit("https://github.com/Chrisdroid1/firebot")
 
 
 @fire.on(fire_on_cmd("readme$"))
 # @register(outgoing=True, pattern="^.readme$")
 async def reedme(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("https://github.com/Chrisdroid1/Fire-X/blob/master/README.md")
+        await e.edit("https://github.com/Chrisdroid1/firebot/blob/master/README.md")
 
 
 @fire.on(fire_on_cmd("heart$"))
@@ -116,7 +116,7 @@ CMD_HELP.update({"fp": "Send face palm emoji."})
 CMD_HELP.update({"moon": "Bot will send a cool moon animation."})
 CMD_HELP.update({"clock": "Bot will send a cool clock animation."})
 CMD_HELP.update({"readme": "Reedme."})
-CMD_HELP.update({"source": "Gives the source of your Fire-X"})
+CMD_HELP.update({"source": "Gives the source of your firebot"})
 CMD_HELP.update({"myusernames": "List of Usernames owned by you."})
 CMD_HELP.update({"oof": "Same as ;__; but ooof"})
 CMD_HELP.update({"earth": "Sends Kensar Earth animation"})

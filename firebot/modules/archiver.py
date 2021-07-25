@@ -16,8 +16,8 @@ from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 from telethon.tl.types import DocumentAttributeVideo
 
-from Fire-X import CMD_HELP
-from Fire-X.Configs import Config as Var
+from firebot import CMD_HELP
+from firebot.Configs import Config as Var
 
 from ..utils import admin_cmd, progress
 
@@ -52,7 +52,7 @@ async def _(event):
             await borg.send_file(
                 event.chat_id,
                 directory_name + ".rar",
-                caption="rarred By Fire-X",
+                caption="rarred By firebot",
                 force_document=True,
                 allow_cache=False,
                 reply_to=event.message.id,
@@ -100,7 +100,7 @@ async def _(event):
             await borg.send_file(
                 event.chat_id,
                 directory_name + ".7z",
-                caption="7z archived By Fire-X",
+                caption="7z archived By firebot",
                 force_document=True,
                 allow_cache=False,
                 reply_to=event.message.id,
@@ -148,7 +148,7 @@ async def _(event):
             await borg.send_file(
                 event.chat_id,
                 output,
-                caption="TAR By Fire-X",
+                caption="TAR By firebot",
                 force_document=True,
                 allow_cache=False,
                 reply_to=event.message.id,

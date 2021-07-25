@@ -2,7 +2,7 @@ import json
 
 import requests
 
-from Fire-X.utils import fire_on_cmd
+from firebot.utils import fire_on_cmd
 
 url = "https://api.hotstar.com/in/aadhar/v2/web/in/user/login"
 headers = {

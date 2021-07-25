@@ -1,6 +1,6 @@
 from telethon.tl.functions.messages import SaveDraftRequest
 
-from Fire-X.utils import edit_or_reply, fire_on_cmd, sudo_cmd
+from firebot.utils import edit_or_reply, fire_on_cmd, sudo_cmd
 
 
 @fire.on(fire_on_cmd(pattern="chain"))

@@ -4,8 +4,8 @@ import re
 import requests
 from bs4 import BeautifulSoup
 
-from Fire-X import CMD_HELP
-from Fire-X.utils import admin_cmd
+from firebot import CMD_HELP
+from firebot.utils import admin_cmd
 
 
 @fire.on(admin_cmd(pattern="book (.*)"))
@@ -45,14 +45,14 @@ async def _(event):
                 f.write("\n" + title)
                 f.write("\nBook link:- " + link + "\n\n")
 
-        f.write("By Fire-X.")
+        f.write("By firebot.")
         f.close()
-        caption = "By Fire-X.\n Get your Superpowers with [Firebot](github.com/chrisdroid1/Fire-X)"
+        caption = "By firebot.\n Get your Superpowers with [Firebot](github.com/chrisdroid1/firebot)"
 
         await borg.send_file(
             event.chat_id,
             "book.txt",
-            caption=f"**BOOKS GATHERED SUCCESSFULLY!\n\nBY Fire-X. Get your Superpowers with [Fire-X](github.com/chrisdroid1/Fire-X).**",
+            caption=f"**BOOKS GATHERED SUCCESSFULLY!\n\nBY firebot. Get your Superpowers with [firebot](github.com/chrisdroid1/firebot).**",
         )
         os.remove("book.txt")
 

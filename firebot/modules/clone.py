@@ -4,12 +4,12 @@ from telethon.tl import functions
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 
-from Fire-X import ALIVE_NAME, AUTONAME, CMD_HELP, DEFAULT_BIO
-from Fire-X.utils import admin_cmd
+from firebot import ALIVE_NAME, AUTONAME, CMD_HELP, DEFAULT_BIO
+from firebot.utils import admin_cmd
 
 FIREBOT = " "
 DEFAULTUSER = str(AUTONAME) if AUTONAME else str(ALIVE_NAME)
-DEFAULTUSERBIO = str(DEFAULT_BIO) if DEFAULT_BIO else "Fire-X is best"
+DEFAULTUSERBIO = str(DEFAULT_BIO) if DEFAULT_BIO else "firebot is best"
 BOTLOG_CHATID = Config.PRIVATE_GROUP_BOT_API_ID
 BOTLOG = True
 

@@ -1,4 +1,4 @@
-"""AFK Plugin for Fire-X
+"""AFK Plugin for firebot
 Syntax: .afk REASON"""
 import asyncio
 import datetime
@@ -7,7 +7,7 @@ from datetime import datetime
 from telethon import events
 from telethon.tl import functions, types
 
-from Fire-X import CMD_HELP, lang
+from firebot import CMD_HELP, lang
 
 global USER_AFK  # pylint:disable=E0602
 global afk_time  # pylint:disable=E0602
@@ -126,7 +126,7 @@ if lang == "si":
         afk_since = "**a while ago**"
         current_message_text = event.message.message.lower()
         if "afk" in current_message_text:
-            # Fire-X’s should not reply to other Fire-X’s
+            # firebot’s should not reply to other firebot’s
             # https://core.telegram.org/bots/faq#why-doesn-39t-my-bot-see-messages-from-other-bots
             return False
         if USER_AFK and not (await event.get_sender()).bot:  # pylint:disable=E0602
@@ -279,7 +279,7 @@ else:
         afk_since = "**a while ago**"
         current_message_text = event.message.message.lower()
         if "afk" in current_message_text:
-            # Firebot's should not reply to other Fire-X’s
+            # Firebot's should not reply to other firebot’s
             # https://core.telegram.org/bots/faq#why-doesn-39t-my-bot-see-messages-from-other-bots
             return False
         if USER_AFK and not (await event.get_sender()).bot:  # pylint:disable=E0602

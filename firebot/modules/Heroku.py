@@ -1,7 +1,7 @@
 # Copyright (C) 2020 Adek Maulana.
 # All rights reserved.
 """
-   Heroku manager for your Fire-X
+   Heroku manager for your firebot
 """
 
 import asyncio
@@ -12,8 +12,8 @@ import heroku3
 import requests
 from telegraph import Telegraph
 
-from Fire-X import CMD_HELP
-from Fire-X.utils import edit_or_reply, fire_on_cmd, sudo_cmd
+from firebot import CMD_HELP
+from firebot.utils import edit_or_reply, fire_on_cmd, sudo_cmd
 
 telegraph = Telegraph()
 tgnoob = telegraph.create_account(short_name="Fire 🇮🇳")
@@ -217,7 +217,7 @@ async def _(givelogs):
         log.write(app.get_log())
     hmm = app.get_log()
     starky = f"<code> {hmm} </code>"
-    title_of_page = "Fire-X UserBot Logs"
+    title_of_page = "firebot UserBot Logs"
     response = telegraph.create_page(title_of_page, html_content=starky)
     km = response["path"]
     suger = f"`Logs Can Be Found` [Here](https://telegra.ph/{km})"

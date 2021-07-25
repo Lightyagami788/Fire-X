@@ -1,5 +1,5 @@
-from Fire-X.Configs import Config
-from Fire-X.utils import fire_on_cmd
+from firebot.Configs import Config
+from firebot.utils import fire_on_cmd
 from var import Var
 
 issudousing = Config.SUDO_USERS
@@ -52,7 +52,7 @@ else:
     dbstats = "Not Fine ❌"
 
 inlinestats = (
-    f"✘ SHOWING Fire-X STATS ✘\n"
+    f"✘ SHOWING firebot STATS ✘\n"
     f"VERSION = {currentversion} \n"
     f"DATABASE = {dbstats} \n"
     f"SUDO = {amiusingsudo} \n"
