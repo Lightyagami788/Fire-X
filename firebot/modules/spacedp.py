@@ -72,3 +72,4 @@ CMD_HELP.update(
 \n\n**Syntax : **`.spacedp`\
 \n**Usage :** uploades new space picture as your profile pic."
     }
+)
