@@ -58,9 +58,7 @@ async def _(event):
         end = datetime.now()
         ms = (end - start).seconds
         await event.edit(
-            "Removed image's Background in {} seconds, powered by Fire-X".format(
-                ms
-            )
+            "Removed image's Background in {} seconds, powered by Fire-X".format(ms)
         )
     else:
         await event.edit(

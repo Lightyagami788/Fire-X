@@ -98,9 +98,7 @@ async def gspider(firebot):
         ]
         for i in testfirebot:
             try:
-                await firebot.client.edit_permissions(
-                    i, user, view_messages=False
-                )
+                await firebot.client.edit_permissions(i, user, view_messages=False)
                 a += 1
                 await chris.edit(f"**GBANNED // Total Affected Chats **: `{a}`")
             except:
@@ -164,9 +162,7 @@ async def gspider(firebot):
         ]
         for i in testfirebot:
             try:
-                await firebot.client.edit_permissions(
-                    i, user, send_messages=True
-                )
+                await firebot.client.edit_permissions(i, user, send_messages=True)
                 a += 1
                 await chris.edit(f"**UNGBANNING // AFFECTED CHATS - {a} **")
             except:

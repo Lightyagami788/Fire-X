@@ -177,9 +177,7 @@ async def get_all_modules(event, borg, channel_id):
     await event.edit(f"**Found : {len_p} Plugins. Trying To Install**")
     for sed in a_plugins:
         try:
-            downloaded_file_name = await borg.download_media(
-                sed, "firebot/modules/"
-            )
+            downloaded_file_name = await borg.download_media(sed, "firebot/modules/")
             if "(" not in downloaded_file_name:
                 path1 = Path(downloaded_file_name)
                 shortname = path1.stem

@@ -1,15 +1,14 @@
 import logging
 from pathlib import Path
 from sys import argv
-import var
 
 import telethon.utils
 from telethon import TelegramClient
 
-from var import Var
 from firebot import bot
 from firebot.Configs import Config
 from firebot.utils import load_module, start_assistant
+from var import Var
 
 sed = logging.getLogger("firebot")
 

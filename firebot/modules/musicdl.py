@@ -1,4 +1,3 @@
-
 """ Spotify / Deezer downloader plugin by @anubisxx | Syntax: .sdd link"""
 import asyncio
 

@@ -4,8 +4,8 @@ import os
 import wget
 from youtubesearchpython import SearchVideos
 
+from firebot.utils import edit_or_reply, fire_on_cmd, sudo_cmd
 from var import Var
-from firebot.utils import fire_on_cmd, edit_or_reply, sudo_cmd
 
 
 @borg.on(fire_on_cmd(pattern="ytmusic ?(.*)"))

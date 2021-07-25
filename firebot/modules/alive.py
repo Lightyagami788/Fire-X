@@ -2,12 +2,12 @@
 # CREDITS: @WhySooSerious, @Sur_vivor
 import time
 
+from telethon import version
 from uniborg.util import fire_on_cmd, sudo_cmd
 
 from firebot import ALIVE_NAME, CMD_HELP, Lastupdate
 from firebot.Configs import Config
 from firebot.modules import currentversion
-from telethon import version
 
 
 # Functions
@@ -45,9 +45,7 @@ PM_IMG = Config.ALIVE_IMAGE
 pm_caption = "  __**★ғɪʀᴇ-x ɪs ʀᴜɴɴɪɴɢ sᴜᴄᴇssғᴜʟʟʏ★**__\n\n"
 
 pm_caption += f"**━━━━━━━|━━━━━|━━━━━━**\n\n"
-pm_caption += (
-    f"                 ◉✿ ᴍᴀsᴛᴇʀ ✿◉\n  **{DEFAULTUSER}**\n\n"
-)
+pm_caption += f"                 ◉✿ ᴍᴀsᴛᴇʀ ✿◉\n  **{DEFAULTUSER}**\n\n"
 pm_caption += f"┏━━━━━━━ɪɴғᴏ━━━━━━━━\n"
 pm_caption += f"┣•➳➠ `ᴛᴇʟᴇᴛʜᴏɴ:` `{version.__version__}` \n"
 pm_caption += f"┣•➳➠ `ᴠᴇʀsɪᴏɴ:` `{currentversion}`\n"

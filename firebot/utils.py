@@ -6,16 +6,10 @@ from pathlib import Path
 
 from telethon import events
 
-from var import Var
 from firebot import CMD_LIST, LOAD_PLUG, SUDO_LIST, bot
 from firebot.Configs import Config
-from firebot.wraptools import (
-    am_i_admin,
-    ignore_bot,
-    ignore_fwd,
-    ignore_grp,
-    ignore_pm,
-)
+from firebot.wraptools import am_i_admin, ignore_bot, ignore_fwd, ignore_grp, ignore_pm
+from var import Var
 
 sedprint = logging.getLogger("PLUGINS")
 cmdhandler = Config.COMMAND_HAND_LER

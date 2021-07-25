@@ -317,11 +317,7 @@ else:
                 text=f"**Showing Stats For {DEFAULTUSER}'s Fire-X** \nNote --> Only Owner Can Check This \n(C) Fire-X",
                 buttons=[
                     [custom.Button.inline("Show Stats ?", data="terminator")],
-                    [
-                        Button.url(
-                            "Repo Here", "https://github.com/Chrisdroid1/Fire-X"
-                        )
-                    ],
+                    [Button.url("Repo Here", "https://github.com/Chrisdroid1/Fire-X")],
                     [Button.url("Join Channel ❤️", "t.me/https://t.me/Fire_X_CHANNEL")],
                 ],
             )

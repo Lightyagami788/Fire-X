@@ -2,7 +2,7 @@
 #
 # lol jee lo apni zindagi
 #
-# HeHe created by @Black_lord_on_fire 
+# HeHe created by @Black_lord_on_fire
 #
 # 😂😂😂
 

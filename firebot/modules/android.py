@@ -70,9 +70,7 @@ async def device_info(request):
     await edit_or_reply(request, reply)
 
 
-@fire.on(
-    fire_on_cmd(outgoing=True, pattern=r"codename(?: |)([\S]*)(?: |)([\s\S]*)")
-)
+@fire.on(fire_on_cmd(outgoing=True, pattern=r"codename(?: |)([\S]*)(?: |)([\s\S]*)"))
 @fire.on(sudo_cmd(pattern="codename(?: |)([\S]*)(?: |)([\s\S]*)", allow_sudo=True))
 async def codename_info(request):
     """search for android codename"""
