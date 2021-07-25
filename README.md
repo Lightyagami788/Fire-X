@@ -55,7 +55,6 @@ $ pip3 install -r requirements.txt
 #Create local.env 
 
 $ python3 -m firebot 
-[Appreciation to](github.com/loverboyXD)
 ```
 # CONFIGS 
 ```
