@@ -76,23 +76,23 @@ GITHUB ➛ <a href="https://github.com/Lightyagami788" alt="Yagami"><img src="ht
 
 #####  Credits 🌹
 
-- FridayUserBot ❤️ - 
+- [FridayUserBot](https://github.com/DevsExpo/FridayUserBot)❤️ - 
 Most of the Plugins Taken from this Project.. Made possible by this. Full Credits. Full Respect
 
-- Virtualuserbot 🔥-
+- [Virtualuserbot](https://github.com/TeamDaisyX/VirtualUserbot)🔥-
 Took a lot of commands thanks to INUKA-ASITH
 
-- DarkCobra 😍 - 
+- [DarkCobra](https://github.com/DARK-COBRA/DARKCOBRA) 😍 - 
 Image Tools Plugins Copied from DC Project.. Credits to DC Team
 
-- CatUserbot - 
+- [CatUserbot](https://github.com/sandy1709/catuserbot)- 
 Internal Core Plugins taken.. Helped a lot to fix bugs in source.. Full respect
 
-- Uniborg - 
+- Uniborg[https://github.com/SPECIHIDE/UniBorg)- 
 Userbots Made possible. Credits
 
 - TeleBot - 
 Speed Boosted by the help of this source code.. Credits
 
-- Black Lightning - 
+- [Black Lightning](https://github.com/Keinshij/Black-lightning)- 
 Got Fun tools from this.. Respect
