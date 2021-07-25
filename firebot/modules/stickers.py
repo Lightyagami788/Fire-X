@@ -53,21 +53,21 @@ async def _(event):
     pack = 1
     userid = event.sender_id
     packname = f"@{user.username} KangPack {pack}"
-    packshortname = f"VirtualUserbot_{userid}_Pack"
+    packshortname = f"firebot_{userid}_Pack"
     await moods.edit("`This Sticker is Gonna Get Stolen.....`")
     is_a_s = is_it_animated_sticker(reply_message)
-    file_ext_ns_ion = "@VirtualUserbot.png"
+    file_ext_ns_ion = "@firebot.png"
     uploaded_sticker = None
     if is_a_s:
         file = await borg.download_file(reply_message.media)
         file_ext_ns_ion = "AnimatedSticker.tgs"
         uploaded_sticker = await borg.upload_file(file, file_name=file_ext_ns_ion)
         packname = f"@{user.username} KangPack {pack}"
-        packshortname = f"VirtualUserbot_{userid}"  # format: Uni_Borg_userid
+        packshortname = f"firebot_{userid}"  # format: Uni_Borg_userid
     else:
         sticker = await convert_to_image(event, borg)
         resize_image(sticker)
-        ok = sedpath + "/" + "@FridayOT.png"
+        ok = sedpath + "/" + "@FireOT.png"
         uploaded_sticker = await borg.upload_file(ok, file_name=file_ext_ns_ion)
         os.remove(sticker)
     await moods.edit("`Inviting This Sticker To Your Pack 🚶`")
