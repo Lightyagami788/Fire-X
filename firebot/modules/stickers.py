@@ -199,8 +199,8 @@ async def _(event):
     os.remove(sedpath + "/" + "@VirtualUserbot.png")
 
 
-@friday.on(friday_on_cmd(pattern="packinfo"))
-@friday.on(sudo_cmd(pattern="packinfo ?(.*)", allow_sudo=True))
+@fire.on(fire_on_cmd(pattern="packinfo"))
+@fire.on(sudo_cmd(pattern="packinfo ?(.*)", allow_sudo=True))
 async def _(event):
     moods = await edit_or_reply(event, "`HeHe , Me Gonna Leech Pack Info`")
     if event.fwd_from:
@@ -239,7 +239,7 @@ async def _(event):
     )
 
 
-@friday.on(friday_on_cmd(pattern="getsticker ?(.*)"))
+@fire.on(fire_on_cmd(pattern="getsticker ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
