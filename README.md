@@ -46,15 +46,16 @@ FROM
 
 ## HOST YOUR FIRE-X on VPS✳️ 
 ```
-git clone `https://github.com/chrisdroid1/Fire-X`
-cd fire bot 
+$ git clone `https://github.com/chrisdroid1/Fire-X`
+$ cd fire bot 
 #install requirements
 
  
-pip3 install -r requirements.txt 
+$ pip3 install -r requirements.txt 
 #Create local.env 
 
-python3 -m firebot 
+$ python3 -m firebot 
+[Appreciation to](github.com/loverboyXD)
 ```
 # CONFIGS 
 ```
